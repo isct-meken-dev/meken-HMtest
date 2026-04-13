@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+body{
+    font-family: 
+    'Noto Sans', 
+    "Helvetica Neue",
+    Arial,
+    "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans",
+    "Noto Sans JP",
+    sans-serif;
+
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+
+/* section */
+.section{
+    padding: 60px 0;
+}
+.section-headline{
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 0 40px;
+}
+
+/* about */
+.about{}
+.about-image{
+    width: 510px;
+    height: 300px;
+}
+.about-caption{}
+.about-headline{}
+.about-disc{}
