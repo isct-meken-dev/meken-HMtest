@@ -20,9 +20,11 @@ section
 */
 .section{
     padding: 60px 0;
+    margin: 0 0 60px;
 }
 .section.feature{
-    background-color: #7de0f1;
+    background-color: #96d2ee;
+    margin: 0 0 60px;
 }
 
 .section-headline{
@@ -56,9 +58,23 @@ about
 /*
 feature
 */
-.featureImg{
+.feature{
+    text-align: center;
+    padding: 10px;
+}
+.feature-headline{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 0 10px;
+}
+
+.feature-img{
     width: 250px;
     height: 250px;
+}
+
+.feature-discription{
+    margin-top: 0px;
 }
 
 .grid{
@@ -70,7 +86,6 @@ feature
 }
 .grid-item{
     width: 250px;
-    height: 250px;
     margin: 0 10px;
     list-style: none;
 }
@@ -78,4 +93,10 @@ feature
 .grid-4{
     display: flex;
     justify-content: center;
+}
+
+.feature .grid{
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
 }
