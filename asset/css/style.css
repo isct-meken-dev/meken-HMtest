@@ -15,10 +15,16 @@ body{
     color: #333;
 }
 
-/* section */
+/* 
+section 
+*/
 .section{
     padding: 60px 0;
 }
+.section.feature{
+    background-color: #7de0f1;
+}
+
 .section-headline{
     font-size: 32px;
     font-weight: bold;
@@ -26,12 +32,50 @@ body{
     margin: 0 0 40px;
 }
 
-/* about */
-.about{}
+/* 
+about 
+*/
+.about{
+    margin: 0 auto;
+    display: flex;
+}
 .about-image{
     width: 510px;
     height: 300px;
 }
-.about-caption{}
-.about-headline{}
-.about-disc{}
+.about-caption{
+    margin-left: 10px;
+}
+.about-headline{
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 0 20px;
+}
+/*.about-disc{}*/
+
+/*
+feature
+*/
+.featureImg{
+    width: 250px;
+    height: 250px;
+}
+
+.grid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+.grid-item{
+    width: 250px;
+    height: 250px;
+    margin: 0 10px;
+    list-style: none;
+}
+
+.grid-4{
+    display: flex;
+    justify-content: center;
+}
