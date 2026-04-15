@@ -71,10 +71,13 @@ feature
 .feature-img{
     width: 250px;
     height: 250px;
+    margin: 0 0 10px;
+
 }
 
 .feature-discription{
-    margin-top: 0px;
+    text-align: left;
+    margin: 0;
 }
 
 .grid{
