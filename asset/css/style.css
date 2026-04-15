@@ -26,7 +26,7 @@ body::before{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    opacity: 0.15;
+    opacity: 0.20;
     z-index: -1;
     pointer-events: none;
 }
@@ -45,8 +45,26 @@ section
     margin: 0 0 60px;
 }
 .section.secondary{
-    background-color: #cad0d3;
+    position: relative;
+    background-color: rgba(208, 230, 241, 0.72);
     margin: 0 0 60px;
+}
+.section.secondary::before,
+.section.secondary::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 30px;
+    pointer-events: none;
+}
+.section.secondary::before{
+    top: -25px;
+    background: linear-gradient(to bottom, rgba(208, 230, 241, 0), rgba(208, 230, 241, 0.72));
+}
+.section.secondary::after{
+    bottom: -25px;
+    background: linear-gradient(to top, rgba(208, 230, 241, 0), rgba(208, 230, 241, 0.72));
 }
 .section-headline{
     font-size: 32px;
@@ -101,7 +119,11 @@ feature
     text-align: left;
     margin: 0;
 }
-
+.feature .grid{
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
 /*
 grid
 */
@@ -136,17 +158,13 @@ grid
     width:25%;
 }
 */
-.feature .grid{
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-}
 
 /*
 blog
 */
 card{
     padding: 0 10px;
+    border-radius: 10px;
 }
 .card-link{
     display: block;
@@ -177,7 +195,10 @@ card{
     color: #999;
     margin: 10px 0;
 }
-.card-info{}
+.card-info{
+    margin-left: 12px;
+    
+}
 .card-title{
     font-size: 18px;
     font-weight: bold;
@@ -191,6 +212,7 @@ card{
     flex-direction: row-reverse;
     justify-content: start;
     align-items: center;
+    margin-left: 12px;
 }
 .writer-name{
     font-size: 14px;
@@ -208,6 +230,8 @@ card{
     margin: 0 15px;
     margin: 0 10px;
     list-style: none;
+    
+
 }
 .button{
     display: inline-block;
@@ -224,3 +248,16 @@ card{
 .button:hover{
     background-color: #555;
 }
+
+/*
+form
+*/
+.select{
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    min-width: 500px;
+}
+.input{}
+.textarea{}
+.radio{}
