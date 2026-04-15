@@ -13,6 +13,22 @@ body{
     font-size: 16px;
     line-height: 1.5;
     color: #333;
+
+    position: relative;
+    margin: 0;
+    min-height: 100vh;
+}
+body::before{
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-image: url("../images/back.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.15;
+    z-index: -1;
+    pointer-events: none;
 }
 /*
 icon
@@ -28,8 +44,8 @@ section
     padding: 60px 0;
     margin: 0 0 60px;
 }
-.section.feature{
-    background-color: #afdcf1;
+.section.secondary{
+    background-color: #cad0d3;
     margin: 0 0 60px;
 }
 .section-headline{
