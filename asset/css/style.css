@@ -248,16 +248,49 @@ card{
 .button:hover{
     background-color: #555;
 }
-
+.button.button-submit{
+    background-color: #8ec0f5;
+}
 /*
 form
 */
+.form-table{
+    margin: 0 auto;
+}
+.form-table th{
+    text-align: left;
+    padding: 10px;
+}
+.form-table td{
+    padding: 10px;
+}
+.form-buttonn{
+    margin-top: 20px;
+    text-align: center;
+    border: 0;
+}
 .select{
     border-radius: 5px;
-    padding: 10px;
+    padding: 5px;
     border: 1px solid #ccc;
     min-width: 500px;
+    background-color: #fff;
 }
-.input{}
-.textarea{}
-.radio{}
+.input{
+    border-radius: 5px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    min-width: 500px;
+    background-color: #fff;
+}
+.radio{
+    margin: 0 10px;
+}
+.textarea{
+    border-radius: 5px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    min-width: 500px;
+    background-color: #fff;
+}
+
