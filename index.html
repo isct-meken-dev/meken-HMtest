@@ -16,7 +16,7 @@
   </head>
   <body>
 
-    <section class = "section">
+    <section class = "section aboutus">
       <h1 class="section-headline">About us</h1>
 
       <figure class="about">
@@ -78,7 +78,7 @@
           <article class="card">
             <a href="https://www.animatetimes.com/tag/details.php?id=6212" class=card-link>
               <span class="card-label">New</span>
-              <img src="https://dummyimage.com/200x100/000/fff" class="card-image" alt="記事の画像">
+              <img src="asset/images/kiji1.jpeg" class="card-image" alt="記事の画像" height="100px" width="200px">
               <div class="card-info">
                 <time datetime="2026-04-13" class="card-time">2026-04-13</time>
                 <h2 class="card-title">記事のタイトル</h2>
@@ -97,7 +97,7 @@
         <li class="blog-item">
           <article class="card">
             <a href="https://www.animatetimes.com/tag/details.php?id=6212" class=card-link>
-              <img src="https://dummyimage.com/200x100/000/fff" class="card-image" alt="記事の画像">
+              <img src="asset/images/kiji2.jpg" class="card-image" alt="記事の画像">
               <div class="card-info">
                 <time datetime="2026-04-12" class="card-time">2026-04-12</time>
                 <h2 class="card-title">記事のタイトル</h2>
@@ -116,7 +116,7 @@
         <li class="blog-item">
           <article class="card">
             <a href="https://www.animatetimes.com/tag/details.php?id=6212" class=card-link>
-              <img src="https://dummyimage.com/200x100/000/fff" class="card-image" alt="記事の画像">
+              <img src="asset/images/kiji3.jpg" class="card-image" alt="記事の画像">
               <div class="card-info">
                 <time datetime="2026-04-11" class="card-time">2026-04-11</time>
                 <h2 class="card-title">記事のタイトル</h2>
@@ -139,38 +139,69 @@
       </div>
     </section>
 
-    <section class="section blog secondary">
+    <section class="section Contact secondary">
       <h1 class="section-headline">Contact</h1>
       <form action="">
         <table class="form-table">
           <tr>
-            <th>Menu</th>
-            <td>
-              <select name="menu" id="menu">// バックエンドの処理が必要
+            <th>
+              <label for="menu">Menu</label></th>
+            <td class ="select">
+              <select name="menu" id="menu">
                 <option value="menu-1">Menu 1</option>
                 <option value="menu-2">Menu 2</option>
                 <option value="menu-3">Menu 3</option>
               </select>
             </td>
           </tr>
+
           <tr>
-            <th>Name</label></th>
+            <th>
+              <label for="name">
+                Name
+              </label>
             <td>
-              <input type="text" id="name"  required></td>
+              <input class="input" type="text" id="name">
+            </td>
           </tr>
+
           <tr>
-            <th>Email</label></th>
-            <td><input type="email" id=""  required></td>
+            <th>
+              <label for="email">
+                Email
+              </label>
+            </th>
+            <td><input class="input" type="email" id="email"></td>
           </tr>
+
           <tr>
-            <th>Gender</label></th>
-            <td><input type="text" id="name"  required></td>
-          </tr>
+            <th>
+              Gender
+            </th>
+            <td>
+              <label class="radio" for="gender-male">
+                <input type="radio" name="gender" value="male">Male
+              </label>
+              <label class="radio" for="gender-female">
+                 <input type="radio" name="gender" value="female">Female
+              </label>
+             <label class="radio" for="gender-other">
+              <input type="radio"  name="gender" value="other">Other
+             </label>
+            </td>
+          </tr>  
+
           <tr>
-            <th>Details</th>
-            <td><input type="text" id="name"  required></td>
+            <label for="detail">
+              <th>Details</th>
+            </label>
+            <td>
+              <textarea class="textarea" id="details" rows="5" cols="40"></textarea>
+            </td>
           </tr>
         </table>
+
+        <button class="button" type="submit">Submit</button>
       </form>
     </section>
     <script type="text/javascript" src="asset/js/hm.js"></script>
