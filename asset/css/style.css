@@ -75,14 +75,12 @@ feature
     font-weight: bold;
     margin: 0 0 10px;
 }
-
 .feature-img{
     width: 210px;
     height: 210px;
     margin: 0 0 0px;
 
 }
-
 .feature-discription{
     text-align: left;
     margin: 0;
