@@ -14,7 +14,7 @@
     window.onscroll=function(e){ reOffset(); }
     window.onresize=function(e){ reOffset(); }
 
-    ctx.fillStyle='#eff8f6';
+    ctx.fillStyle='#061713';
 
     // mouse related variables
     var PI2=Math.PI*2;
@@ -42,7 +42,7 @@
     //$("#canvas").mousedown(function(e){handleMouseDown(e);});
     //$("#canvas").mouseup(function(e){handleMouseUp(e);});
 
-    //canvas.onmousemove = function(e){handleMouseDown(e);};
+    // canvas.onmousemove = function(e){handleMouseDown(e);};
 
     // draw every hex in its current position
     function draw(){
