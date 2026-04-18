@@ -208,9 +208,9 @@ hero
   z-index: -1;
   backdrop-filter: blur(0);
   background-color: rgba(0, 0, 0, 0); /* 少し暗くするなら */
-  transition: backdrop-filter 0.5s, background-color 0.5s; /* 0.5秒かけて変化 */
+    transition: backdrop-filter 0.2s, background-color 0.2s;
 }
-.is-blurred {
+.blur-layer.is-blurred {
   backdrop-filter: blur(10px);
   background-color: rgba(0, 0, 0, 0.4); /* 暗くして文字を読みやすく */
 }
