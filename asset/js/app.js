@@ -13,15 +13,15 @@ window.addEventListener('scroll', function() {
   document.querySelector('.hero-video').style.filter = `blur(${blurAmount}px)`;
 });
 */
-const heroVideo = document.querySelector('.hero-video');
+const blurLayer = document.querySelector('.blur-layer');
 const vh = window.innerHeight; // 画面の高さを取得
 
 window.addEventListener('scroll', () => {
-  if (!heroVideo) return;
+  if (!blurLayer) return;
 
   if (window.scrollY > vh * 0.8) {
-    heroVideo.classList.add('is-blurred');
+    blurLayer.classList.add('is-blurred');
   } else {
-    heroVideo.classList.remove('is-blurred');
+    blurLayer.classList.remove('is-blurred');
   }
 });
