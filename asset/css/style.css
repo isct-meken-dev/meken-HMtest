@@ -119,8 +119,8 @@ header
     z-index: 1000;
     width: 100%;
     box-sizing: border-box;
-    background-color: rgba(9, 40, 56, 0.55);
-    backdrop-filter: blur(4px);
+    background-color: transparent;
+    backdrop-filter: none;
 }
 .header-logo{
     display: block;
@@ -129,7 +129,7 @@ header
 }
 .header > .logo > img{
     display: block;
-    width: 140px;
+    width: 185px;
     height: auto;
 }
 .headr > .img{}
@@ -139,22 +139,61 @@ header
 .nav-list{
     display: flex;
     align-items: center;
-    gap: 18px;
+    gap: 0;
     margin: 0;
     padding: 0;
     list-style: none;
 }
 .nav-item{
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+}
+.nav-item + .nav-item::before{
+    content: "";
+    width: 1px;
+    height: 18px;
+    background: rgba(255, 255, 255, 0.45);
+    margin: 0 10px;
 }
 .nav-item a{
     color: #fff;
+    position: relative;
+    display: inline-block;
     text-decoration: none;
     font-weight: 700;
     letter-spacing: 0.02em;
+    padding: 8px 12px;
+    border: 0;
+    transition: color 0.2s ease, transform 0.25s ease;
+}
+.nav-item a::after{
+    content: "";
+    position: absolute;
+    left: 12px;
+    right: 12px;
+    bottom: 3px;
+    height: 2px;
+    border-radius: 999px;
+    background: linear-gradient(90deg, rgba(154, 232, 255, 0.95), rgba(255, 255, 255, 0.95));
+    transform: scaleX(0.05);
+    transform-origin: left center;
+    opacity: 0;
+    transition: transform 0.32s cubic-bezier(0.17, 0.84, 0.44, 1), opacity 0.2s ease;
 }
 .nav-item a:hover{
-    opacity: 0.75;
+    opacity: 1;
+    color: #e9fbff;
+    transform: translateY(-1px);
+}
+.nav-item a:hover::after,
+.nav-item a:focus-visible::after{
+    opacity: 1;
+    transform: scaleX(1);
+}
+.nav-item a:focus-visible{
+    outline: none;
+    color: #e9fbff;
 }
 
 /*
@@ -581,13 +620,23 @@ footer
         padding: 10px 14px;
     }
     .header > .logo > img{
-        width: 110px;
+        width: 135px;
     }
     .nav-list{
-        gap: 10px;
+        gap: 0;
     }
     .nav-item a{
         font-size: 14px;
+        padding: 6px 9px;
+    }
+    .nav-item a::after{
+        left: 9px;
+        right: 9px;
+        bottom: 2px;
+    }
+    .nav-item + .nav-item::before{
+        height: 14px;
+        margin: 0 6px;
     }
     .hero-waves {
         width: 56px;
