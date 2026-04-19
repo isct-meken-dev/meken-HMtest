@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700;900&display=swap" rel="stylesheet">
     <title>Animeken.titech</title>
   </head>
   <body>
@@ -32,11 +33,17 @@
 
     <section class="hero">
       <strong class="hero-headline">ぼっち・ざ・てっく！<br>制作中！</strong>
-      <canvas id="canvas" width=800 height=600></canvas>
-        <video autoplay loop muted playsinline preload="metadata" class="hero-video blur-layer"> 
-         <!---<source src="asset/images/ぼっち・ざ・てっく！-lite.mp4" type="video/mp4"> ---> 
-          <source src="asset/images/WebBG.mp4" type="video/mp4">
-        </video>
+      <!---<canvas id="canvas" width=800 height=600></canvas>. --->
+      <video autoplay loop muted playsinline preload="metadata" class="hero-video blur-layer"> 
+        <!---<source src="asset/images/ぼっち・ざ・てっく！-lite.mp4" type="video/mp4"> ---> 
+        <source src="asset/images/WebBG.mp4" type="video/mp4">
+      </video>
+      <div class="top-scroll">
+        <a href="#aboutus" class="scroll-symbol">
+          Scroll
+        </a>
+      </div>
+
       <!--
       <div class="hero-waves" aria-hidden="true">
         <svg class="hero-wave-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
@@ -285,6 +292,7 @@
 
     <script type="text/javascript" src="asset/js/anime.js"></script>
     <script type="text/javascript" src="asset/js/backmp4.js"></script> 
-    <!---<script type="text/javascript" src="asset/js/dotpatern.js"></script> ---> SOS
+    <script type="text/javascript" src="asset/js/scroll.js"></script>
+    <!---<script type="text/javascript" src="asset/js/dotpatern.js"></script> ---> 
   </body>
 </html>

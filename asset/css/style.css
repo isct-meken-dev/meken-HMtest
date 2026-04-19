@@ -18,6 +18,9 @@ body{
     margin: 0;
     min-height: 100vh;
 }
+html{
+    scroll-behavior: smooth;
+}
 body::before{
     content: "";
     position: fixed;
@@ -213,21 +216,28 @@ hero
     top: 50%;
     left: 8%;
     transform: translateY(-50%);
-    font-size: 30px;
+    font-size: clamp(30px, 3.8vw, 60px);
     font-weight: 900;
-    color: #f2f4f0;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
-    letter-spacing: 0.08em;
+    color: #ffffff;
+    font-family: 'Noto Sans JP', 'Noto Sans', sans-serif;
+    text-shadow: 0 2px 0 rgba(0, 0, 0, 0.28), 0 0 18px rgba(0, 0, 0, 0.18);
+    letter-spacing: 0.04em;
+    line-height: 1.02;
     width: auto;
     max-width: 90%;
     margin: 0;
     text-align: left;
-    font-family: 'Noto Sans', sans-serif;
     text-transform: uppercase;
+}
+.hero-headline br{
+    display: block;
+    margin-top: 0.3em;
+    
 }
 .hero > headline{
     content: "";
     position: absolute;
+    margin-bottom: 10px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -285,6 +295,52 @@ hero
     animation-delay: -5s;
     animation-duration: 20s;
 }
+.top-scroll{
+    position: absolute;
+    left: 50%;
+    bottom: 48px;
+    transform: translateX(-50%);
+    z-index: 20;
+}
+.scroll-symbol{
+    color: #fff;
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    padding: 8px 12px;
+    border: 0;
+    transition: color 0.2s ease, transform 0.25s ease;
+}
+.scroll-symbol::after{
+    content: "";
+    position: absolute;
+    left: 12px;
+    right: 12px;
+    bottom: 3px;
+    height: 2px;
+    border-radius: 999px;
+    background: linear-gradient(90deg, rgba(154, 232, 255, 0.95), rgba(255, 255, 255, 0.95));
+    transform: scaleX(0.05);
+    transform-origin: left center;
+    opacity: 0;
+    transition: transform 0.32s cubic-bezier(0.17, 0.84, 0.44, 1), opacity 0.2s ease;
+}
+.scroll-symbol:hover{
+    opacity: 1;
+    color: #e9fbff;
+    transform: translateY(-1px);
+}
+.scroll-symbol:hover::after,
+.scroll-symbol:focus-visible::after{
+    opacity: 1;
+    transform: scaleX(1);
+}
+.scroll-symbol:focus-visible{
+    outline: none;
+    color: #e9fbff;
+}
 
 @keyframes hero-wave-drift {
     0% {
@@ -303,7 +359,7 @@ hero
     height: 100%;
     object-fit: cover;
     z-index: -10;
-    opacity: 0.7;
+    opacity: 0.9;
     position: fixed;
     transition: filter 0.2s ease;
     filter: blur(0);
