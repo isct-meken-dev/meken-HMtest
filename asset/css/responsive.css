@@ -1,0 +1,33 @@
+@media (max-width: 768px){
+    .header{
+        padding: 10px 14px;
+    }
+    .header > .logo > img{
+        width: 135px;
+    }
+    .nav-list{
+        gap: 0;
+    }
+    .nav-item a{
+        font-size: 14px;
+        padding: 6px 9px;
+    }
+    .nav-item a::after{
+        left: 9px;
+        right: 9px;
+        bottom: 2px;
+    }
+    .nav-item + .nav-item::before{
+        height: 14px;
+        margin: 0 6px;
+    }
+    .hero-waves {
+        width: 56px;
+        height: 100%;
+    }
+
+    .hero-wave-svg {
+        width: 180vh;
+        height: 56px;
+    }
+}
