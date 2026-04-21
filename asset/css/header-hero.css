@@ -26,7 +26,11 @@ header
     width: 185px;
     height: auto;
 }
-.headr > .img{}
+.headr > .img{
+    display: block;
+    width: 150px;
+    height: auto;
+}
 .header-nav{
     margin-left: 24px;
 }
