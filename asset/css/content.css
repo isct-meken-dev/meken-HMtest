@@ -18,7 +18,59 @@ about
     font-weight: bold;
     margin: 0 0 20px;
 }
+
+tab{
+    
+}
 /*.about-disc{}*/
+#tab-v {
+    display: flex;
+    column-gap: 3em;
+    margin: 1em;    /* タブの上下左右に余白を設定するためだけのCSS */
+}
+
+#tab-v .tab-elem {
+    display: block;
+    padding: 7px 0 7px 1.5em;
+    color: #999;
+    position: relative;
+}
+
+#tab-v .tab-elem:hover {
+    cursor: pointer;
+}
+
+/* 表示中のタブのCSS */
+#tab-v .tab-elem.active {
+    color: #333;
+}
+
+/* 表示中のタブの疑似要素 */
+#tab-v .tab-elem.active::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background-color: blue;
+}
+
+#tab-v .tabbody-v {
+    /* タブ内コンテンツの高さを親要素いっぱいにするための指定 */
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+#tab-v .tabbody-elem {
+    flex-grow: 1; /* タブ内コンテンツの高さを親要素いっぱいにするための指定 */
+    padding: 1em;
+    max-width: 100%;
+    background-color: #e8e8e8;
+}
 
 /*
 feature
