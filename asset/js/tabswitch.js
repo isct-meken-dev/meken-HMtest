@@ -8,7 +8,7 @@ function displayTabV(targetIdV) {
         if (pagesV[i].id != targetIdV) {
             pagesV[i].style.display = "none";
         } else {
-            pagesV[i].style.display = "block";
+            pagesV[i].style.display = "flex";
         }
     }
 
