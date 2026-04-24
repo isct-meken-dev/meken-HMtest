@@ -348,6 +348,8 @@ sns
     align-items: center;
     gap: 10px;
     margin: 0;  
+    width: 100%;
+    justify-content: flex-end;
 }
 .access .logo img{
     display: block;
@@ -401,4 +403,18 @@ footer
 .access .acces-logo img{
     height: 50px;
     width: auto;
+}
+/*
+end
+*/
+.info{
+    display: flex;
+    
+    align-items: center;
+    width: 100%;
+}
+.address{
+    text-align: center;
+    font-style: normal;
+    margin: 0 0 0 20px; 
 }
