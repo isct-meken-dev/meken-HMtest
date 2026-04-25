@@ -9,6 +9,22 @@ about
 .about-image{
     width: 510px;
     height: 300px;
+    position: relative;
+    z-index: 0;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+}
+
+/* about-imageを背景画像化 */
+.about-image-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
 }
 .about-caption{
     margin-left: 10px;
