@@ -2,10 +2,13 @@
 
 アニメーション研究会のホームページ制作プロジェクトです。  
 引き継ぎ資料が不足している前提で、静的サイトとして一から構築しています。
+[前HP](http://titans-animeken.com/)
 
 以下のような記事を目標にしています。
 https://www.mappa.co.jp/
 https://st-kai.jp/
+https://vll.jp/
+https://wafl.jp/
 
 ## 概要
 
