@@ -3,17 +3,22 @@ about
 */
 .about{
     margin: 0 auto;
-    display: flex;
-    align-items: center;
+    display: block;
+    position: relative;
+    min-height: 350px;
 }
 .about-image{
-    width: 510px;
-    height: 300px;
+    width: 70vw;
+    max-width: 900px;
+    aspect-ratio: 17/10;
+    margin: 0 auto 24px auto;
     position: relative;
+    display: block;
     z-index: 0;
     background-size: contain !important;
     background-repeat: no-repeat !important;
     background-position: center !important;
+    pointer-events: none;
 }
 
 /* about-imageを背景画像化 */
@@ -27,19 +32,51 @@ about
     z-index: -1;
 }
 .about-caption{
-    margin-left: 10px;
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    gap: 300px;
 }
 .about-headline{
-    font-size: 24px;
+    font-size: 28px;
     font-weight: bold;
-    margin: 0 0 20px;
+    margin: 30px 0 20px 0;
+    text-align: center;
+    background: rgba(0,0,0,0.35);
+    padding: 8px 24px;
+    border-radius: 8px;
+    color: #fff;
 }
 
 .tab{
     display: flex;
     align-items: flex-start;
 }
-/*.about-disc{}*/
+.about-discription{
+    margin: 0;
+    text-align: left;
+    background: rgba(0,0,0,0.45);
+    padding: 12px 20px;
+    border-radius: 8px;
+    color: #fff;
+    position: absolute;
+    max-width: 60%;
+    font-size: 1.1em;
+}
+.about-discription-topleft {
+    top: 12px;
+    left: 12px;
+}
+.about-discription-bottomright {
+    bottom: 12px;
+    right: 12px;
+    text-align: right;
+}
 #tab-v {
     width: 180px;
     flex-shrink: 0;
