@@ -14,7 +14,6 @@ about
     margin: 0 auto 24px auto;
     position: relative !important;
     display: block;
-    z-index: 0;
     background-size: contain !important;
     background-repeat: no-repeat !important;
     background-position: center !important;
