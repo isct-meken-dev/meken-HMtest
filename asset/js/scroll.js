@@ -1,4 +1,5 @@
-// スクロールシンボルをクリックしたときの処理
+
+// スクロールシンボル
 const symbol = document.querySelector('.scroll-symbol');
 
 if (symbol) {
@@ -13,20 +14,24 @@ if (symbol) {
   });
 }
 
-
-// スクロール時に一度だけ条件を満たしたら自動スクロール
+// 自動スクロール
 (function firstscroll() {
   let alreadyScrolled = false;
+
   window.addEventListener('scroll', () => {
     if (alreadyScrolled) return;
+
     const curY_bottom = window.scrollY + window.innerHeight;
     if (curY_bottom >= window.innerHeight && curY_bottom < 2 * window.innerHeight) {
-      // 画面下端が2*window.innerHeightになるように絶対位置でスクロール
-      window.scrollTo({
-        top: 2 * window.innerHeight - window.innerHeight,
+      
+      alreadyScrolled = true;
+      window.removeEventListener('scroll', handleFirstScroll);
+
+      const scrollamount = 2 * window.innerHeight - curY_bottom; // 画面下端が2*window.innerHeightになるように
+      window.scrollBy({
+        top: scrollamount,
         behavior: 'smooth'
       });
-      alreadyScrolled = true;
     }
   });
 })();
