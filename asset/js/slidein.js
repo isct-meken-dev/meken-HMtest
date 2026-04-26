@@ -10,50 +10,63 @@ const handleSlideIn = () => {
         const slideInAt = (window.scrollY + window.innerHeight) - el.offsetHeight / 2;
         const elBottom = el.offsetTop + el.offsetHeight;
         const isHalfShown = slideInAt > el.offsetTop;
-        const isNotScrolledPast = window.scrollY < elBottom;
+        //const isNotScrolledPast = window.scrollY < elBottom;
         
         // 付与
-        if (isHalfShown && isNotScrolledPast) {
+        if (isHalfShown /*&& isNotScrolledPast*/) {
             el.classList.add('is-visible');
-        } else {
+        } 
+        // 剥奪
+        /*
+        else {
             el.classList.remove('is-visible');
         }
+        */
     });
     rightin.forEach(el => {
         const slideInAt = (window.scrollY + window.innerHeight) - el.offsetHeight / 2;
         const elBottom = el.offsetTop + el.offsetHeight;
         const isHalfShown = slideInAt > el.offsetTop;
-        const isNotScrolledPast = window.scrollY < elBottom;
+        //const isNotScrolledPast = window.scrollY < elBottom;
 
-        if (isHalfShown && isNotScrolledPast) {
+        if (isHalfShown /*&& isNotScrolledPast*/) {
             el.classList.add('is-visible');
-        } else {
+        } 
+        /*
+        else {
             el.classList.remove('is-visible');
         }
+        */
     }); 
     bottomin.forEach(el => {
         const slideInAt = (window.scrollY + window.innerHeight) - el.offsetHeight / 2;
         const elBottom = el.offsetTop + el.offsetHeight;
         const isHalfShown = slideInAt > el.offsetTop;
-        const isNotScrolledPast = window.scrollY < elBottom;
+        //const isNotScrolledPast = window.scrollY < elBottom;
 
-        if (isHalfShown && isNotScrolledPast) {
+        if (isHalfShown /*&& isNotScrolledPast*/) {
             el.classList.add('is-visible');
-        } else {
+        } 
+        /*
+        else {
             el.classList.remove('is-visible');
         }
+        */
     });
     topin.forEach(el => {
         const slideInAt = (window.scrollY + window.innerHeight) - el.offsetHeight / 2;
         const elBottom = el.offsetTop + el.offsetHeight;
         const isHalfShown = slideInAt > el.offsetTop;
-        const isNotScrolledPast = window.scrollY < elBottom;
+        //const isNotScrolledPast = window.scrollY < elBottom;
 
-        if (isHalfShown && isNotScrolledPast) {
+        if (isHalfShown /*&& isNotScrolledPast*/) {
             el.classList.add('is-visible');
-        } else {
+        } 
+        /*
+        else {
             el.classList.remove('is-visible');
         }
+        */
     });
 };
 

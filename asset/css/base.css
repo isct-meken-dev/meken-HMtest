@@ -64,9 +64,11 @@ section
     transform: translateY(-50px);
     transition: 0.4s ease;
 }
-.is-visible{
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
+.is-visible {
+    opacity: 1 !important; 
+    transform: translate3d(0, 0, 0) !important; 
+    visibility: visible !important;
+    will-change: opacity, transform;
 }
 .section{
     padding: 60px 0;

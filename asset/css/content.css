@@ -17,7 +17,6 @@ about
     background-size: contain !important;
     background-repeat: no-repeat !important;
     background-position: center !important;
-    pointer-events: none;
 }
 
 /* about-imageを背景画像化 */
@@ -50,6 +49,18 @@ about
     padding: 8px 24px;
     border-radius: 8px;
     color: #fff;
+}
+.about-image.is-visible .about-discription {
+    opacity: 1 !important;
+    transform: translate3d(0, 0, 0) !important;
+    visibility: visible !important;
+}
+
+/* 初期状態の指定を強化 */
+.about-discription.slidein-left {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: 0.6s ease 0.3s; /* 0.3秒遅らせてふわっと出すとかっこいい */
 }
 
 .tab{
