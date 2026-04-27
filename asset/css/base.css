@@ -102,6 +102,52 @@ section
     text-align: center;
     margin: 0 0 30px;
 }
+.hero > .section-headline {
+    font-size: 56px;
+    font-weight: 900;
+    background: linear-gradient(90deg, #00c3ff 0%, #ffff1c 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    letter-spacing: 0.08em;
+    text-shadow:
+        0 4px 24px rgba(0, 195, 255, 0.3),
+        0 2px 8px rgba(0,0,0,0.25),
+        0 1px 0 #fff;
+    position: relative;
+    padding-bottom: 18px;
+    margin-bottom: 36px;
+    animation: hero-headline-pop 1.2s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+@keyframes hero-headline-pop {
+    0% {
+        opacity: 0;
+        transform: translateY(40px) scale(0.95);
+    }
+    80% {
+        opacity: 1;
+        transform: translateY(-8px) scale(1.04);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/*
+.hero > .section-headline::after {
+    content: "";
+    display: block;
+    width: 160px;
+    height: 5px;
+    margin: 18px auto 0;
+    background: linear-gradient(90deg, #0567e8 0%, #ff2b1c 100%);
+    border-radius: 3px;
+    box-shadow: 0 2px 8px rgba(0,195,255,0.2);
+}
+*/
 .section-button{
     margin-top: 40px;
     text-align: center;
