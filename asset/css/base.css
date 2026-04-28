@@ -33,6 +33,12 @@ body::before{
     z-index: -1;
     pointer-events: none;
 }
+@font-face {
+    font-family: 'keifont';
+    src: url('../fonts/keifont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 /*
 icon
@@ -153,5 +159,9 @@ section
     text-align: center;
 }
 .footer{
+    /* keifont用クラス */
+    .keifont {
+        font-family: 'keifont', sans-serif !important;
+    }
     padding: 20px 0;
 }
