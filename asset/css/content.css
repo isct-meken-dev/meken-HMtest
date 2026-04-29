@@ -331,6 +331,12 @@ card{
     height: auto;
     object-fit: cover;
 }
+.card-dt{
+    display: flex;
+    width: 85%;
+    max-width: 220px;
+    margin: 0 auto;
+}
 .card-image{
     width: 100%;
     height: auto;
@@ -344,7 +350,10 @@ card{
 }
 .card-info{
     margin-left: 12px;
-    
+}
+.works .card{
+    display: flex;
+    flex-direction: column; 
 }
 .card-title{
     font-size: 18px;
@@ -377,8 +386,13 @@ card{
     margin: 0 15px;
     margin: 0 10px;
     list-style: none;
-    
-
+}
+.blog-item-second{
+    width: 350px;
+    margin: 0 15px;
+    margin: 0 10px;
+    list-style: none;
+    float: right;
 }
 .button{
     display: inline-block;
