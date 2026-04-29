@@ -510,10 +510,6 @@ card{
     color: #fff;
     margin: 10px 0;
 }
-.card-info{
-    margin-left: 12px;
-    
-}
 .card-title{
     font-size: 18px;
     font-weight: bold;
@@ -539,14 +535,6 @@ card{
     margin-left: 3px;
     border-radius: 50%;
     overflow: hidden;
-}
-.blog-item{
-    width: 350px;
-    margin: 0 15px;
-    margin: 0 10px;
-    list-style: none;
-    
-
 }
 .button{
     display: inline-block;
