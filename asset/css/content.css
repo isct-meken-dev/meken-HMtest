@@ -291,6 +291,8 @@ grid
 .grid-col-3 > .grid-item{
     display: flex;
     justify-content: center;
+    gap: 16px;
+    width:33.3%;
 }
 /*
 .grid-col-4 > .grid-item{
@@ -388,14 +390,15 @@ card{
     overflow: hidden;
 }
 .blog-item{
-    margin: 0 15px;
     margin: 0 10px;
+    width: 350px;
+
+    list-style: none;
     list-style: none;
 }
 .blog-item-second{
     width: 350px;
-    margin: 0 15px;
-    margin: 0 10px;
+    margin: 0;
     list-style: none;
     float: right;
 }
