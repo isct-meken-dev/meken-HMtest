@@ -305,12 +305,21 @@ grid
 /*
 blog
 */
-card{
-    padding: 0 10px;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: row;
-    width: 350px;
+.card{
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+    backdrop-filter: blur(4px);
+    width: 100%;
+}
+.card:hover {
+    transform: translateY(-8px) scale(1.02);
+    background: rgba(255, 255, 255, 0.07);
+    border-color: rgba(0, 195, 255, 0.4);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 
+                0 0 20px rgba(0, 195, 255, 0.1);
 }
 .card-link{
     display: block;
@@ -367,6 +376,15 @@ card{
     font-size: 18px;
     font-weight: bold;
     margin: 0;
+}
+.card-title {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin: 8px 0;
+    background: linear-gradient(90deg, #fff, #ccc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .card-discription{
     margin: 0;
