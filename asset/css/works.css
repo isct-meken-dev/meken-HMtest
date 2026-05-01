@@ -1,0 +1,76 @@
+/* works-card横並び用 */
+.works-flex-row {
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.works-flex-row .works-dt {
+    min-width: 180px;
+    max-width: 320px;
+    background: rgba(255,255,255,0.08);
+    color: #222;
+    border-radius: 10px;
+    padding: 16px 18px;
+    font-size: 1em;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+@media (max-width: 900px) {
+    .works-flex-row {
+        flex-direction: column;
+        gap: 12px;
+    }
+    .works-flex-row .works-dt {
+        max-width: 100%;
+        min-width: 0;
+        padding: 12px 10px;
+    }
+}
+/* 交互レイアウト用 */
+.blog ul {
+    display: flex;
+    flex-direction: column;
+    
+    padding: 0;
+    margin: 0 auto;
+    width: 90%;
+}
+.blog-item,
+.blog-item-second {
+    list-style: none;
+    margin: 0;
+}
+.blog-item {
+    align-self: flex-start;
+}
+.blog-item-second {
+    align-self: flex-end;
+}
+.card-element,
+.card-element-second
+ {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+    position: relative;
+}
+.card-element-second{
+    flex-direction: row-reverse;
+}
+
+
+@media (max-width: 900px) {
+    .blog ul {
+        width: 100%;
+        gap: 24px;
+    }
+    .blog-item,
+    .blog-item-second {
+        align-self: center;
+        width: 96vw;
+        max-width: 400px;
+    }
+}

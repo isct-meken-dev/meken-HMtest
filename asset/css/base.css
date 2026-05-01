@@ -79,6 +79,7 @@ section
 .section{
     padding: 60px 0;
     margin: 0 0 60px;
+    width: 100%;
 }
 .section.secondary{
     position: relative;
@@ -108,8 +109,26 @@ section
     text-align: center;
     margin: 0 0 30px;
 }
-.hero > .section-headline {
+.hero >.headinfo >.section-headline {
     font-size: 56px;
+    font-weight: 900;
+    background: linear-gradient(90deg, #00c3ff 0%, #ffff1c 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    letter-spacing: 0.08em;
+    text-shadow:
+        0 4px 24px rgba(0, 195, 255, 0.3),
+        0 2px 8px rgba(0,0,0,0.25),
+        0 1px 0 #fff;
+    position: relative;
+    padding-bottom: 18px;
+    margin-bottom: 36px;
+    animation: hero-headline-pop 1.2s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.head-disc{
+    font-size: 16px;
     font-weight: 900;
     background: linear-gradient(90deg, #00c3ff 0%, #ffff1c 100%);
     -webkit-background-clip: text;
