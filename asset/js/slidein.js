@@ -1,74 +1,26 @@
-// 要リファクタリング
-const leftin = document.querySelectorAll('.slidein-left');
-const rightin = document.querySelectorAll('.slidein-right');
-const bottomin = document.querySelectorAll('.slidein-bottom');
-const topin = document.querySelectorAll('.slidein-top');
+// 対象のクラス配列
+const slideinClasses = ['slidein-left', 'slidein-right', 'slidein-bottom', 'slidein-top'];
 
-const handleSlideIn = () => {
-    leftin.forEach(el => {
-        // 発火条件
-        const slideInAt = (window.scrollY + window.innerHeight) - el.offsetHeight / 2;
-        const elBottom = el.offsetTop + el.offsetHeight;
-        const isHalfShown = slideInAt > el.offsetTop;
-        //const isNotScrolledPast = window.scrollY < elBottom;
-        
-        // 付与
-        if (isHalfShown /*&& isNotScrolledPast*/) {
-            el.classList.add('is-visible');
-        } 
-        // 剥奪
-        /*
-        else {
-            el.classList.remove('is-visible');
-        }
-        */
+function handleSlideIn() {
+    slideinClasses.forEach(cls => {
+        document.querySelectorAll('.' + cls).forEach(el => {
+            // 発火条件
+            const slideInAt = (window.scrollY + window.innerHeight) - el.offsetHeight / 2;
+            const isHalfShown = slideInAt > el.offsetTop;
+            // const isNotScrolledPast = window.scrollY < elBottom;
+            // const elBottom = el.offsetTop + el.offsetHeight;
+
+            //  可視化
+            if (isHalfShown) {
+                el.classList.add('is-visible');
+            }
+            // 非可視化
+            // else {
+            //     el.classList.remove('is-visible');
+            // }
+        });
     });
-    rightin.forEach(el => {
-        const slideInAt = (window.scrollY + window.innerHeight) - el.offsetHeight / 2;
-        const elBottom = el.offsetTop + el.offsetHeight;
-        const isHalfShown = slideInAt > el.offsetTop;
-        //const isNotScrolledPast = window.scrollY < elBottom;
-
-        if (isHalfShown /*&& isNotScrolledPast*/) {
-            el.classList.add('is-visible');
-        } 
-        /*
-        else {
-            el.classList.remove('is-visible');
-        }
-        */
-    }); 
-    bottomin.forEach(el => {
-        const slideInAt = (window.scrollY + window.innerHeight) - el.offsetHeight / 2;
-        const elBottom = el.offsetTop + el.offsetHeight;
-        const isHalfShown = slideInAt > el.offsetTop;
-        //const isNotScrolledPast = window.scrollY < elBottom;
-
-        if (isHalfShown /*&& isNotScrolledPast*/) {
-            el.classList.add('is-visible');
-        } 
-        /*
-        else {
-            el.classList.remove('is-visible');
-        }
-        */
-    });
-    topin.forEach(el => {
-        const slideInAt = (window.scrollY + window.innerHeight) - el.offsetHeight / 2;
-        const elBottom = el.offsetTop + el.offsetHeight;
-        const isHalfShown = slideInAt > el.offsetTop;
-        //const isNotScrolledPast = window.scrollY < elBottom;
-
-        if (isHalfShown /*&& isNotScrolledPast*/) {
-            el.classList.add('is-visible');
-        } 
-        /*
-        else {
-            el.classList.remove('is-visible');
-        }
-        */
-    });
-};
+}
 
 window.addEventListener('scroll', handleSlideIn);
-window.addEventListener('load', handleSlideIn);
+window.addEventListener('load', handleSlideIn); 
