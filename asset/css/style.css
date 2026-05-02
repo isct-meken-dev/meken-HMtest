@@ -44,30 +44,7 @@ icon
 /* 
 section 
 */
-.slidein-left{
-    opacity: 0;
-    transform: translateX(-50px);
-    transition: 0.4s ease;
-}
-.slidein-right{
-    opacity: 0;
-    transform: translateX(50px);
-    transition: 0.4s ease;
-}
-.slidein-bottom{
-    opacity: 0;
-    transform: translateY(50px);
-    transition: 0.4s ease;
-}
-.slidein-up{
-    opacity: 0;
-    transform: translateY(-50px);
-    transition: 0.4s ease;
-}
-.is-visible{
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-}
+
 .section{
     padding: 60px 0;
     margin: 0 0 60px;
