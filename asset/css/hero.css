@@ -1,0 +1,51 @@
+
+.hero .headinfo {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin: 32px;
+    z-index: 2;
+    text-align: left;
+}
+
+.hero {
+    position: relative;
+}
+.headinfo{
+    border-left: 2px solid rgba(0, 195, 255, 0.5); /* 左側に細い光のライン */
+    margin-left: 5%;
+    position: relative;
+    padding-left: 40px; /* ラインと文字の間の余白 */
+    margin-left: 10%;   /* 画面左端からの距離 */
+    text-align: left;
+    bottom: 0;
+}
+.hero > .headinfo::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1px; /* 線の細さ */
+    height: 100%; /* headlineからdiscまでカバーする長さ */
+    background: linear-gradient(to bottom, transparent, #fff, transparent); /* 上下を透過させて「光の筋」にする */
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.5); /* ほのかな光 */
+    animation: line-grow 1.5s ease-out forwards;
+}
+
+.hero >.headinfo >.section-headline {
+ 
+    font-size: clamp(40px, 8vw, 80px); /* 画面サイズで可変 */
+    line-height: 1.1;
+    letter-spacing: -0.02em; /* 詰め気味にして力強さを出す */
+    background: linear-gradient(135deg, #fff 0%, #00c3ff 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    filter: drop-shadow(0 0 15px rgba(0, 195, 255, 0.4));
+}
+.head-disc{
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.7); /* 少し落とした白 */
+    opacity: 0;
+    animation: hero-headline-pop 1.0s cubic-bezier(0.23, 1, 0.32, 1) forwards !important;
+    animation-delay: 0.5s; /* headlineの0.5秒後に開始 */
+}

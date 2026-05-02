@@ -7,11 +7,14 @@ function handleSlideIn() {
             // 発火条件
             const slideInAt = (window.scrollY + window.innerHeight) - el.offsetHeight / 2;
             const isHalfShown = slideInAt > el.offsetTop;
+            const rect = el.getBoundingClientRect();
             // const isNotScrolledPast = window.scrollY < elBottom;
             // const elBottom = el.offsetTop + el.offsetHeight;
 
+            const isShown = rect.top < window.innerHeight - 100;
+
             //  可視化
-            if (isHalfShown) {
+            if (isShown) {
                 el.classList.add('is-visible');
             }
             // 非可視化
