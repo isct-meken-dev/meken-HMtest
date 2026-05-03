@@ -602,24 +602,6 @@ sns
     margin: 0;
 }
 /*
-map
-*/
-.map-info{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-.map-headline{
-    margin-left: 30px;
-    font: broad;
-}
-.map-discription{
-    text-align: center;
-    font-style: normal;
-    margin: 0 0 0 20px; 
-}
-/*
 footer
 */
 .footer{
