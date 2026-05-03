@@ -12,6 +12,11 @@
     <link rel="stylesheet" href="asset/css/responsive.css">
     <link rel="stylesheet" href="asset/css/sanitize.css">
     <link rel="stylesheet" href="asset/css/hero.css">
+    <link rel="stylesheet" href="asset/css/footer.css">
+    <link rel="stylesheet" href="asset/css/about.css">
+    <link rel="stylesheet" href="asset/css/map.css">
+    <link rel="stylesheet" href="asset/css/footer.css">
+    <link rel="stylesheet" href="asset/css/tab.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -38,7 +43,7 @@
     <section class="hero">
       <div class="headinfo">
         <h1 class="section-headline slidein-left"> Contact</h1>
-        <div class="head-disc">text text text text text text text text text text <br>text text text text text text text text text text </div>
+        <div class="head-disc">質問連絡はここで受け付けるぽよ <br>ぽよぽよぽよぽよぽよぽよぽよ ぽよぽよぽよぽよぽよぽよぽよ</div>
       </div>
       <video autoplay loop muted playsinline preload="metadata" class="hero-video blur-layer"> 
         <!---<source src="asset/images/ぼっち・ざ・てっく！-lite.mp4" type="video/mp4"> ---> 
@@ -52,11 +57,10 @@
     </section>
 
     <section class="footer" >
-      
+      <h1 class="topsection-headline"> Map</h1>
       <div class="footer-content">
         <figure class="footer-info">
           <div class="info">
-            <img src="asset/images/logo/logo_bw_text_blur.svg" alt="ロゴ" height="250px" width="400px">
             <div class="address-section">
               <h3 class="address-title">所在地</h3>
               <address class="address">
@@ -71,10 +75,14 @@
                 <strong>活動日時:</strong> 主に週末（詳細は<a href="#contact">Contact</a>ページにて）
               </p>
             </div>
+
+            <div class="map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.441419086714!2d139.6848033152588!3d35.60520338019986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188c9b9e5a7c7%3A0x6e5b8c8c8c8c8c8c!2z44CSMTUyLTg1NTAg5p2x5Lqs6YO95Yy66LC35rC05Yy65LiK55S677>!5e0!3m2!1sja!2sjp!4v1700000000000!5m2!1sja!2sjp" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
           </div>
         </figure>
 
-        <div class="footer-social">
+        <!-- <div class="footer-social">
           <h3 class="social-title">Follow Us</h3>
           <div class="sns-icons">
             <a href="https://discord.com/" target="_blank" rel="noopener noreferrer" title="Discord">
@@ -93,11 +101,66 @@
               <span class="sns-placeholder">IG</span>
             </a>
           </div>
+        </div> -->
+      </div>
+  
+    </section>
+    <section class="section aboutus">
+      <h1 class="topsection-headline ">Hope to join</h1>
+      <div class="tab">
+
+        <div class="tab-v" id="tab-v">
+          <ul class="tab-contena">
+            <li class="tab-elem" data-tabid="tab-p1">
+              <h2 class="tab-headline">学内の方へ</h2>
+            </li>
+            <li class="tab-elem" data-tabid="tab-p2">
+              <h2 class="tab-headline">学外の方へ</h2>
+            </li>
+          </ul>
+        </div>
+
+        <div class="tabbody-v" id="tabbody-v">
+
+            <div class="tabbody-elem" id="tab-p1">
+              <p class="tabbody-img">
+                <img src="asset/images/aboutus/01.png" class="tabbody-image" alt="キャラデザ">
+              </p>
+              <p class="tabbody-discription">
+              text text text text text text text text text text text text text text text text
+              text text text text text text text text text text text text text text text text
+              text text text text text text text text text text text text text text text text
+              text text text text text text text text text text text text text text text text
+              </p>
+              <div class="questionset" id="question1">
+                <h3 class="question-headline">Q1. どんな活動をしているの？</h3>
+                <p class="question-answer">
+                  A1. 主にアニメ制作を行っていますが、企画立案からシナリオ作成、キャラクターデザイン、動画編集、音響制作など、幅広い分野で活動しています。初心者も歓迎しており、経験豊富なメンバーがサポートします。
+                </p>
+              </div>
+              <div class="questionset" id="question1">
+                <h3 class="question-headline">Q2. どんな活動をしているの？</h3>
+                <p class="question-answer">
+                  A2. 主にアニメ制作を行っていますが、企画立案からシナリオ作成、キャラクターデザイン、動画編集、音響制作など、幅広い分野で活動しています。初心者も歓迎しており、経験豊富なメンバーがサポートします。
+                </p>
+              </div>
+            </div>
+
+            <div class="tabbody-elem" id="tab-p2">
+              <p class="tabbody-img">
+                <img src="asset/images/aboutus/01.png" class="tabbody-image" alt="キャラデザ">
+              </p>
+              <p class="tabbody-discription">
+                text text text text text text text text text text text text text text text text
+              </p>
+              <div class="questionset" id="question1">
+                <h3 class="question-headline">Q2. どんな活動をしているの？</h3>
+                <p class="question-answer">
+                  A2. 主にアニメ制作を行っていますが、企画立案からシナリオ作成、キャラクターデザイン、動画編集、音響制作など、幅広い分野で活動しています。初心者も歓迎しており、経験豊富なメンバーがサポートします。
+                </p>
+              </div>
         </div>
       </div>
-
-     
-
     </section>
   <script type="text/javascript" src="asset/js/slidein.js"></script>
     <script type="text/javascript" src="asset/js/backmp4.js"></script> 

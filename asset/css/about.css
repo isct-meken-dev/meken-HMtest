@@ -68,10 +68,6 @@ about
 .about-discription2.slidein-left{
     transition: 0.9s ease 0.6s; 
 }
-.tab{
-    display: flex;
-    align-items: flex-start;
-}
 .about-discription{
     background: none !important; /* 背景色を消す */
     box-shadow: none !important; /* 影を消す */
@@ -108,103 +104,4 @@ about
     bottom: 15px;
     right: 15px;
     text-align: right;
-}
-#tab-v {
-    width: 180px;
-    flex-shrink: 0;
-    margin: 1em 0 0;    /* タブ見出しの上端をtabbody画像の上端に合わせる */
-}
-
-#tab-v .tab-contena {
-    margin-left: 20px;
-    padding: 0;
-    list-style: none;
-}
-
-/* タブ切り替え機能 */
-#tab-v .tab-elem {
-    display: block;
-    padding: 7px 0 7px 1.5em;
-    color: #999;
-    position: relative;
-    margin: 0 0 12px;
-}
-#tab-v .tab-headline {
-    position: relative;
-    display: inline-block;
-    margin: 0;
-    color: inherit;
-    font-weight: 700;
-    letter-spacing: 0.02em;
-    transition: color 0.2s ease, transform 0.25s ease;
-}
-#tab-v .tab-headline::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: -3px;
-    height: 2px;
-    border-radius: 999px;
-    background: linear-gradient(90deg, rgba(154, 232, 255, 0.95), rgba(255, 255, 255, 0.95));
-    transform: scaleX(0.05);
-    transform-origin: left center;
-    opacity: 0;
-    transition: transform 0.32s cubic-bezier(0.17, 0.84, 0.44, 1), opacity 0.2s ease;
-}
-#tab-v .tab-elem:hover {
-    cursor: pointer;
-}
-#tab-v .tab-elem:hover .tab-headline,
-#tab-v .tab-elem.active .tab-headline {
-    color: #e9fbff;
-    transform: translateY(-1px);
-}
-
-#tab-v .tab-elem:hover .tab-headline::after,
-#tab-v .tab-elem.active .tab-headline::after {
-    opacity: 1;
-    transform: scaleX(1);
-}
-
-/* 表示中のタブのCSS */
-#tab-v .tab-elem.active {
-    color: #f7f5f5;
-}
-
-/* 表示中のタブの疑似要素 */
-
-#tabbody-v {
-    /* タブ内コンテンツの高さを親要素いっぱいにするための指定 */
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-}
-
-#tabbody-v .tabbody-elem {
-    flex-grow: 1; /* タブ内コンテンツの高さを親要素いっぱいにするための指定 */
-    padding: 1em;
-    max-width: 100%;
-    display: flex;
-    align-items: flex-start;
-    gap: 1rem;
-}
-
-#tabbody-v .tabbody-img {
-    margin: 0;
-    flex: 0 0 auto;
-}
-
-#tabbody-v .tabbody-img img {
-    display: block;
-    width: 400px;
-    height: auto;
-}
-
-#tabbody-v .tabbody-discription {
-    margin: 0;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-self: center;
 }
