@@ -303,10 +303,12 @@ map
 /*
 footer
 */
-.footer{
-    background-color: rgba(9, 40, 56, 0.72);
+.footer, .footerpage{
     color: #fff;
     padding: 60px 20px;
+}
+.footer{
+   background-color: rgba(9, 40, 56, 0.72);
 }
 .footer-headline{
     font-size: 28px;

@@ -57,12 +57,17 @@ about
     transform: translate3d(0, 0, 0) !important;
     visibility: visible !important;
 }
-.about-discription.slidein-left {
+.about-discription.slidein-left,
+.about-discription2.slidein-left{
     opacity: 0;
     transform: translateX(-50px);
-    transition: 0.6s ease 0.3s; /* 0.3秒遅らせてふわっと出すとかっこいい */
 }
-
+.about-discription.slidein-left{
+    transition: 0.6s ease 0.3s; 
+}
+.about-discription2.slidein-left{
+    transition: 0.9s ease 0.6s; 
+}
 .tab{
     display: flex;
     align-items: flex-start;

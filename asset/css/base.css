@@ -51,8 +51,8 @@ slidein
 */
 .slidein-left, .slidein-right, .slidein-bottom, .slidein-up {
     opacity: 0;
-    transition: 0.4s ease;
-    transition-duration: 0.6s;
+    /* transition: 0.4s ease; */
+    transition-duration: 0.7s;
 }
 .slidein-left{
     transform: translateX(-50px);
