@@ -6,13 +6,15 @@
     display: flex;
     flex-direction: row; /* 横並びに変更 */
     align-items: center;
-    gap: 60px; /* 画像とテキストの間隔を広げる */
+    gap: 3px; /* 画像とテキストの間隔を広げる */
+    margin-bottom: 80px;
 }
 
 /* テキストエリア */
 .concept-disc {
     flex: 1;
     text-align: left; /* 左揃えにして可読性を高める */
+    width: 40%;
 }
 
 /* 見出し：光のライン演出を継承 */
@@ -43,18 +45,23 @@
     text-align: left !important;
 }
 
-/* 画像エリア：奥行きを作る */
+
+/* 画像エリアの設定 */
 .concept-img {
     flex: 1;
     position: relative;
     z-index: 1;
+    display: flex;
+    justify-content: center; /* 中央寄せ */
+    margin-bottom: 40px;
 }
 
 .concept-img img {
-    width: 40%;
+    width: 100%; /* 親要素(flex:1)の幅いっぱいに広げる */
+    max-width: 500px; /* 大きくなりすぎないように上限を設定 */
     height: auto;
     border-radius: 12px;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4); /* 浮遊感 */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
     transition: transform 0.5s ease;
 }
 

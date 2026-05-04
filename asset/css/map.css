@@ -6,7 +6,7 @@ map
     justify-content: center;
     align-items: center;
     width: 50%;
-    height: 400px;
+    height: 350px;
 }
 .map-info{
     display: flex;
