@@ -21,6 +21,7 @@ footer
     gap: 40px;
     max-width: 1200px;
     margin: 0 auto 40px;
+
 }
 .footer-info{
     margin: 0;
@@ -32,6 +33,7 @@ footer
     gap: 40px;
     align-items: center;
     margin-left: 40px;
+    justify-content: center;
 }
 .info img{
     flex: 0 0 auto;
