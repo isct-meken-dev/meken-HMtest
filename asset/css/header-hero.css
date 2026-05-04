@@ -64,6 +64,9 @@ header
     padding: 8px 12px;
     border: 0;
     transition: color 0.2s ease, transform 0.25s ease;
+    padding: 8px 16px;           /* クリック領域を少し広げる */
+    border-radius: 4px;          /* 角を丸める */
+    transition: all 0.3s ease;   /* 変化を滑らかに */
 }
 .nav-item a::after{
     content: "";
@@ -81,13 +84,17 @@ header
 }
 .nav-item a:hover{
     opacity: 1;
-    color: #e9fbff;
     transform: translateY(-1px);
+    color: #0fb3ea;
+    background-color: rgba(154, 232, 255, 0.15); /* ブランドカラーの薄い光 */
+    text-shadow: 0 0 8px rgba(154, 232, 255, 0.5); /* 文字をわずかに発光させる */
+    transform: translateY(-2px);
 }
 .nav-item a:hover::after,
 .nav-item a:focus-visible::after{
     opacity: 1;
     transform: scaleX(1);
+    
 }
 .nav-item a:focus-visible{
     outline: none;
