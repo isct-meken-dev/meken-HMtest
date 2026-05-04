@@ -49,3 +49,27 @@ window.addEventListener('load', () => {
         displayTabV(tavsV[0].dataset.tabid);
     }
 });
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  const tabButtons = document.querySelectorAll('.tab-btn');
+  const tabPanels = document.querySelectorAll('.tab-panel');
+  
+  tabButtons.forEach(button => {
+    button.addEventListener('click', function() {
+      const targetTab = this.getAttribute('data-tab');
+      
+      // タブボタンの状態更新
+      tabButtons.forEach(btn => btn.classList.remove('active'));
+      this.classList.add('active');
+      
+      // タブパネルの状態更新
+      tabPanels.forEach(panel => {
+        panel.classList.remove('active');
+      });
+      
+      const targetPanel = document.getElementById(targetTab);
+      targetPanel.classList.add('active');
+    });
+  });
+});
