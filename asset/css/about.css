@@ -68,7 +68,7 @@ about
 .about-discription2.slidein-left{
     transition: 0.9s ease 0.6s; 
 }
-.about-discription{
+.catch ,.about-discription{
     background: none !important; /* 背景色を消す */
     box-shadow: none !important; /* 影を消す */
     border-radius: 0 !important;
