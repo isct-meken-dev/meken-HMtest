@@ -10,6 +10,9 @@ https://st-kai.jp/
 https://vll.jp/
 https://wafl.jp/
 
+## 更新事項
+・習作の投稿
+・ブログの投稿
 ## 概要
 
 - 技術構成: HTML / CSS / JavaScript

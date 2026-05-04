@@ -1,3 +1,16 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-panel {
+  animation: fadeIn 0.7s ease;
+}
+
 .tab{
     
     align-items: flex-start;
@@ -85,7 +98,7 @@
 }
 
 #tabbody-v .tabbody-img {
-    margin: 0;
+    margin-left: 20px;
     flex: 0 0 auto;
 }
 
@@ -106,16 +119,71 @@
 /* 
 question 
 */
-.question {
-    width: 80%;
+
+.questionset {
     font-size: 1.2em;
     font-weight: bold;
-    margin-bottom: 0.5em;
+    width: 80%;              /* 横幅を広げる */
+    margin: 2rem auto;       /* 上下の余白を調整し中央寄せ */
+    padding: 24px;
+    background: rgba(255, 255, 255, 0.03); /* ほのかな透過白 */
+    border-left: 3px solid #9dff00;        /* 左側のアクセントライン */
+    border-radius: 0 12px 12px 0;          /* 右側だけ角を丸く */
+    backdrop-filter: blur(8px);            /* 背景をぼかして高級感を出す */
+    transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+    box-sizing: border-box;
 }
-
+.question-headline {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 1.15rem;
+    font-weight: 900;
+    color: #9dff00; /* 強調色（Aboutセクションの文字色と統一） */
+    margin: 0 0 14px 0;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    letter-spacing: 0.05em;
+}
 .questionset {
     margin: 60px;
     font-size: 1.2em;
     font-weight: bold;
     margin-bottom: 0.5em;
 }
+.question-headline::before {
+    content: "";
+    font-size: 0.8rem;
+    background: #9dff00;
+    color: #000;
+    width: 22px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    flex-shrink: 0;
+}
+
+/* 回答のテキスト（A.） */
+ .question-answer {
+    font-size: 0.95rem;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.85); 
+    margin: 0;
+    padding-left: 34px; 
+    position: relative;
+    font-weight: normal; 
+}
+
+
+/* 回答の先頭に「ANS.」という小さな補助テキスト */
+/* .question-answer::before {
+    content: "ANS.";
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 0.65rem;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.4);
+    letter-spacing: 0.1em;
+} */
