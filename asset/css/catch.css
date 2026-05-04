@@ -11,10 +11,16 @@
 }
 
 /* テキストエリア */
+/* catch_3.css を修正 */
 .concept-disc {
     flex: 1;
-    text-align: left; /* 左揃えにして可読性を高める */
+    text-align: left;
     width: 40%;
+    /* 以下の設定を確実に。flexが効いている場合はこれを追加 */
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; /* 左寄せ */
+    justify-content: flex-start;
 }
 
 /* 見出し：光のライン演出を継承 */
@@ -23,9 +29,9 @@
     background: none !important; /* 古い背景を消す */
     padding: 0 0 8px 0 !important;
     border-bottom: 2px solid #00c3ff; /* アンダーラインデザイン */
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     letter-spacing: 0.1em;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 /* キャッチコピー：こだわりフォント[cite: 33] */
@@ -57,14 +63,21 @@
 }
 
 .concept-img img {
-    width: 100%; /* 親要素(flex:1)の幅いっぱいに広げる */
+    width: 70%; /* 親要素(flex:1)の幅いっぱいに広げる */
     max-width: 500px; /* 大きくなりすぎないように上限を設定 */
     height: auto;
     border-radius: 12px;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
     transition: transform 0.5s ease;
+    margin-top: 30px;
 }
-
+.concept-image{
+    width: 20%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    transition: transform 0.5s ease;
+}
 /* ホバー時に画像が少し動く演出 */
 .concept-img:hover img {
     transform: scale(1.03) rotate(-1deg);

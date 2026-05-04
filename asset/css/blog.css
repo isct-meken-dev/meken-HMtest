@@ -74,3 +74,16 @@ card{
     background-color: #8ec0f5;
     color: #fff;
 }
+.blog-item{
+    margin: 0 10px;
+    width: 350px;
+
+    list-style: none;
+    list-style: none;
+}
+.blog-item-second{
+    width: 350px;
+    margin: 0;
+    list-style: none;
+    float: right;
+}

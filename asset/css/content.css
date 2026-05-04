@@ -168,19 +168,7 @@ blog
     border-radius: 50%;
     overflow: hidden;
 }
-.blog-item{
-    margin: 0 10px;
-    width: 350px;
 
-    list-style: none;
-    list-style: none;
-}
-.blog-item-second{
-    width: 350px;
-    margin: 0;
-    list-style: none;
-    float: right;
-}
 .button{
     display: inline-block;
     font-weight: bold;
