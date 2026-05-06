@@ -89,7 +89,8 @@
 
 #tabbody-v .tabbody-elem {
     flex-grow: 1; /* タブ内コンテンツの高さを親要素いっぱいにするための指定 */
-    padding: 1em;
+    margin : 80px;
+    margin-top: 30px;
     max-width: 100%;
     display: flex;
     align-items: flex-start;
@@ -119,6 +120,39 @@
 /* 
 question 
 */
+/* tab.css 内の .qa を上書き */
+.qa {
+    width: 100%;             /* 横幅いっぱいに広げる */
+    margin: 60px 0 0px;     /* 上に大きな余白、下に少しの余白 */
+    font-size: 2.5rem;       /* サイズを大きく */
+    font-weight: 900;
+    color: #fff;
+    letter-spacing: 0.1em;
+    position: relative;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* 前方のアクセント：光るドット */
+.qa::before {
+    content: "";
+    width: 12px;
+    height: 12px;
+    background: #9dff00;
+    box-shadow: 0 0 10px #9dff00;
+    display: inline-block;
+}
+
+/* 後方のアクセント：細く伸びる光のライン */
+.qa::after {
+    content: "";
+    flex: 1;                /* 残りの幅をすべて使う */
+    height: 1px;
+    background: linear-gradient(90deg, rgba(157, 255, 0, 0.8), transparent);
+    box-shadow: 0 0 5px rgba(157, 255, 0, 0.5);
+}
 
 .questionset {
     font-size: 1.2em;
