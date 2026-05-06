@@ -79,9 +79,9 @@
     transition: transform 0.5s ease;
 }
 /* ホバー時に画像が少し動く演出 */
-.concept-img:hover img {
+/* .concept-img:hover img {
     transform: scale(1.03) rotate(-1deg);
-}
+} */
 
 /* レスポンシブ対応：スマホでは縦並び */
 @media (max-width: 900px) {
