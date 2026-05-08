@@ -1,0 +1,80 @@
+
+/*
+feature
+*/
+.feature{
+    text-align: center;
+    padding: 10px;
+}
+.feature-headline{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 0 10px;
+}
+.feature-img{
+    width: 210px;
+    height: 210px;
+    margin: 0 0 0px;
+
+}
+.feature-discription{
+    text-align: left;
+    margin: 0;
+}
+.feature .grid{
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+
+/*
+form
+*/
+.form-table{
+    margin: 0 auto;
+}
+.form-table th{
+    text-align: left;
+    padding: 10px;
+}
+.form-table td{
+    padding: 10px;
+}
+.form-buttonn{
+    margin-top: 20px;
+    text-align: center;
+    border: 0;
+}
+.select{
+    border-radius: 5px;
+    padding: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.55);
+    min-width: 500px;
+    background-color: rgba(255, 255, 255, 0.08);
+    color: #fff;
+}
+.input{
+    border-radius: 5px;
+    padding: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.55);
+    min-width: 500px;
+    background-color: rgba(255, 255, 255, 0.08);
+    color: #fff;
+}
+.radio{
+    margin: 0 10px;
+}
+.textarea{
+    border-radius: 5px;
+    padding: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.55);
+    min-width: 500px;
+    background-color: rgba(255, 255, 255, 0.08);
+    color: #fff;
+}
+.select::placeholder,
+.input::placeholder,
+.textarea::placeholder{
+    color: rgba(255, 255, 255, 0.75);
+}
