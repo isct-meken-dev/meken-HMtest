@@ -84,14 +84,33 @@
 
 
 @media (max-width: 900px) {
-    .blog ul {
-        width: 100%;
-        gap: 24px;
+    /* カード内の横並びを解除して縦並びにする */
+    .card-element, 
+    .card-element-second {
+        flex-direction: column !important; /* 縦に積む */
+        align-items: center !important;
+        text-align: center !important;
+        padding: 16px !important;
     }
-    .blog-item,
-    .blog-item-second {
-        align-self: center;
-        width: 96vw;
-        max-width: 400px;
+
+    /* 画像の幅を固定せず、スマホ画面に合わせる */
+    .card-image {
+        width: 100% !important;
+        max-width: 350px !important; /* 画像が大きくなりすぎないよう調整 */
+        height: auto !important;
+        margin: 0 auto 16px auto !important;
+    }
+
+    /* 消えていたテキストエリアを表示させる */
+    .card-info {
+        width: 100% !important;
+        padding-left: 0 !important; /* 横並び用の余白をリセット */
+        display: block !important;
+    }
+
+    /* 作品説明（吹き出し風）の幅を調整 */
+    .works-dt {
+        max-width: 100% !important;
+        margin: 10px auto !important;
     }
 }

@@ -1,4 +1,4 @@
-@media (max-width: 768px){
+@media (max-width: 820px){
     .header{
         padding: 10px 14px;
     }
@@ -29,5 +29,91 @@
     .hero-wave-svg {
         width: 180vh;
         height: 56px;
+    }
+}
+
+/* タブレット・スマホ共通 (900px以下) */
+@media (max-width: 900px) {
+    /* グリッドを縦並びに */
+    .grid {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    /* 3カラム指定を解除 */
+    .grid-col-3 > .grid-item,
+    .blog-item,
+    .blog-item-second {
+        width: 70% !important; 
+        margin: 0 auto !important;
+        float: none !important; 
+    }
+
+    /* カード画像のサイズ調整 */
+    .card-image {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Worksページ特有の交互配置を解除 */
+    .works-flex-row {
+        flex-direction: column !important;
+    }
+}
+/* works.css または responsive.css の @media (max-width: 900px) 内に追加 */
+
+
+
+/* responsive.css */
+
+@media (max-width: 820px) {
+    /* footer全体のレイアウトを縦積みに強制変更 */
+    .footer-content {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 30px !important;
+        width: 100% !important;
+    }
+
+    /* 左側の情報エリア（ロゴと住所）を縦並びに */
+    .info {
+        display: flex !important;
+        flex-direction: column !important;
+        margin-left: 0 !important;
+        text-align: center !important;
+        width: 100% !important;
+        gap: 20px !important;
+    }
+
+    /* 1文字改行を防ぐため、幅制限を解除 */
+    .address-section {
+        width: 90% !important;
+        margin: 0 auto !important;
+    }
+
+    /* 住所と連絡先を横に広げる */
+    .address, .contact-info {
+        font-size: 14px !important;
+        line-height: 1.8 !important;
+        display: block !important;
+        width: 100% !important;
+    }
+
+    /* ロゴ画像が小さくなりすぎないように固定 */
+    .info img {
+        width: 200px !important;
+        max-width: 80% !important;
+        height: auto !important;
+        margin: 0 auto !important;
+    }
+
+    /* SNSエリアを中央へ */
+    .footer-social {
+        width: 100% !important;
+        text-align: center !important;
+        grid-column: auto !important;
+        grid-row: auto !important;
+        align-self: center !important;
     }
 }
