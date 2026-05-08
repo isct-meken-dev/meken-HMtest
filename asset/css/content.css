@@ -42,6 +42,7 @@ grid
     margin: 0 10px;
     list-style: none;
 }
+
 /*
 .grid-col-2 > .grid-item{
     display: flex;
@@ -49,12 +50,15 @@ grid
     width:50%;
 }
 */
+
 .grid-col-3 > .grid-item{
     display: flex;
     justify-content: center;
     gap: 16px;
     width:33.3%;
+    margin: 20px 0;
 }
+
 /*
 .grid-col-4 > .grid-item{
     display: flex;
@@ -132,6 +136,7 @@ blog
 .works .card{
     display: flex;
     flex-direction: column; 
+    width: 100%;
 }
 .card-title{
     font-size: 18px;
