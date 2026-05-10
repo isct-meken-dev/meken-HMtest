@@ -15,7 +15,6 @@ header
     box-sizing: border-box;
     background-color: transparent;
     backdrop-filter: none;
-    width: 100%;
     overflow: hidden;
 }
 .header-logo{
