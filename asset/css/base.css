@@ -112,6 +112,29 @@ section
     text-align: left;
     margin: 0 0 30px;
 }
+.section-disc {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.8); /* 真っ白より少し透過させて背景に馴染ませる */
+    max-width: 800px;           /* 長文が間伸びしないように幅を制限 */
+    margin: 0 auto 40px;        /* 中央寄せ */
+    text-align: center;         /* headlineと合わせて中央揃え */
+    padding: 0 20px;
+    position: relative;
+    letter-spacing: 0.05em;
+}
+
+/* 装飾：上下に薄い境界線を入れて「データパネル」感を出す */
+.section-disc::before,
+.section-disc::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #00c3ff, transparent);
+    margin: 15px auto;
+    opacity: 0.6;
+}
 .topsection-headline{
     font-size: 32px;
     font-weight: bold;
