@@ -1,5 +1,15 @@
 @charset "UTF-8";
+html, body {
+    overflow-x: hidden; /* 横方向のはみ出しを強制カット */
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
 
+/* 全ての要素に border-box を適用（余白計算による幅のズレを防止） */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
 body{
     font-family: 
     'Noto Sans', 

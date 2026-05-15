@@ -15,7 +15,6 @@ header
     box-sizing: border-box;
     background-color: transparent;
     backdrop-filter: none;
-    width: 100%;
     overflow: hidden;
 }
 .header-logo{
@@ -253,6 +252,7 @@ hero
     100% {
         transform: translate3d(85px, 0, 0);
     }
+<<<<<<< HEAD
 }
 
 .hero-video{
@@ -294,3 +294,68 @@ hero
   z-index: -1;
   pointer-events: none; /* 下の要素をクリックできるようにする */
 }
+=======
+    .nav-list{
+        gap: 0;
+    }
+    .nav-item a{
+        font-size: 14px;
+        padding: 6px 9px;
+    }
+    .nav-item a::after{
+        left: 9px;
+        right: 9px;
+        bottom: 2px;
+    }
+    .nav-item + .nav-item::before{
+        height: 14px;
+        margin: 0 6px;
+    }
+}
+/* header.css の該当箇所を修正 */
+.header {
+    /* ...既存のスタイル... */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap !important; /* 絶対に折り返さない */
+    padding: 1vh 2vw;            /* 上下左右の余白を画面サイズに連動させる */
+    width: 100%;
+}
+
+.header-nav {
+    margin-left: 2vw;            /* ロゴとの間隔も割合で制御 */
+    flex: 1;                     /* ナビゲーションエリアを柔軟に広げる */
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap !important; /* リスト内も絶対に1行 */
+    gap: 0.5vw;                  /* 項目間の隙間を画面幅の0.5%に固定 */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    white-space: nowrap;         /* テキスト自体が途中で改行されるのを防ぐ */
+}
+
+.nav-item a {
+    /* ...既存のスタイル... */
+    font-size: clamp(10px, 1.2vw, 16px); /* 最小10px、最大16pxの間で可変 */
+    padding: 0.8vh 1vw;                 /* リンク内の余白も割合に */
+}
+
+/* 区切り線を画面幅が狭いときは細く、または非表示に */
+.nav-item + .nav-item::before {
+    content: "";
+    width: 1px;
+    height: 1.5vh;
+    background: rgba(255, 255, 255, 0.45);
+    margin: 0 0.5vw;
+}
+>>>>>>> 4f93336c2afbe90ff017ee9cc9b272b6f8a2f722

@@ -1,4 +1,24 @@
+<<<<<<< HEAD
 
+=======
+.hero{
+    position: relative;
+    width: 100vw;         
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.hero > img,logo-video {
+    max-width: 70%;
+    height: auto;
+    object-fit: cover;
+    opacity: 0.8;
+    z-index: 1;
+}
+>>>>>>> 4f93336c2afbe90ff017ee9cc9b272b6f8a2f722
 .hero .headinfo {
     position: absolute;
     left: 0;
@@ -228,12 +248,12 @@ hero video
   width: 100%; height: 100vh;
   z-index: -1;
   backdrop-filter: blur(0);
-  background-color: rgba(0, 0, 0, 0); /* 少し暗くするなら */
-    transition: backdrop-filter 0.2s, background-color 0.2s;
+  background-color: rgba(0, 0, 0, 0.4); /* 少し暗くするなら */
+transition: backdrop-filter 0.2s, background-color 0.2s;
 }
 .blur-layer.is-blurred {
   backdrop-filter: blur(10px);
-  background-color: rgba(0, 0, 0, 0.4); /* 暗くして文字を読みやすく */
+  background-color: rgba(0, 0, 0, 0.5); /* 暗くして文字を読みやすく */
 }
 .blur-overlay {
   position: fixed;
@@ -244,4 +264,22 @@ hero video
   backdrop-filter: blur(0px); /* 最初はぼかしゼロ */
   z-index: -1;
   pointer-events: none; /* 下の要素をクリックできるようにする */
+}
+
+@media (max-width: 820px) {
+    /* ヒーローエリアの情報を少し上にずらす、または小さくする */
+    .hero .headinfo {
+        margin: 20px;
+        bottom: 40px; /* Scrollボタンとの距離を離す */
+        padding-left: 20px;
+    }
+
+    .hero > .headinfo > .section-headline {
+        font-size: 2.5rem !important; /* 文字を少し小さくして被りを防ぐ */
+    }
+
+    /* Scrollボタン自体の位置を少し下げる */
+    .top-scroll {
+        bottom: 20px;
+    }
 }
