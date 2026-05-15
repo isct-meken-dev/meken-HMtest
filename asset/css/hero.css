@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+
+=======
 .hero{
     position: relative;
     width: 100vw;         
@@ -15,6 +18,7 @@
     opacity: 0.8;
     z-index: 1;
 }
+>>>>>>> 4f93336c2afbe90ff017ee9cc9b272b6f8a2f722
 .hero .headinfo {
     position: absolute;
     left: 0;
@@ -90,6 +94,7 @@
 }
 
 .hero >.headinfo >.section-headline {
+ 
     font-size: clamp(40px, 8vw, 80px); /* 画面サイズで可変 */
     line-height: 1.1;
     letter-spacing: -0.02em; /* 詰め気味にして力強さを出す */
@@ -113,6 +118,7 @@
   height: auto;
   opacity: 0.3;
   z-index: -1;
+  
 }
 
 /*
