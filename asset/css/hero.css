@@ -90,7 +90,6 @@
 }
 
 .hero >.headinfo >.section-headline {
- 
     font-size: clamp(40px, 8vw, 80px); /* 画面サイズで可変 */
     line-height: 1.1;
     letter-spacing: -0.02em; /* 詰め気味にして力強さを出す */
@@ -114,7 +113,6 @@
   height: auto;
   opacity: 0.3;
   z-index: -1;
-  
 }
 
 /*
