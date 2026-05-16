@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="asset/css/hero.css">
     <link rel="stylesheet" href="asset/css/header.css">
     <link rel="stylesheet" href="asset/css/responsive.css">
+    <link rel="stylesheet" href="asset/css/test.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -74,28 +76,41 @@
       -->
     </section>
 
-    <section class="section aboutus">
-      <h1 class="topsection-headline slidein-left">About</h1>
-      <figure class="about">
-        <div class="about-image slidein-bottom"
-             img='asset/images/aboutus/meken.top.webp'
-             style="background-image: url('asset/images.bak/aboutus/image.png');
-               background-size: cover; background-position: center; position:relative;"
-        >
-          <div class="about-discription about-discription-topleft slidein-left">
-              科学大唯一の公認アニメサークル
-          </div>
-          <div class="about-discription about-discription-bottomright slidein-left keifont">
-            アニメーション制作を通じ、創作の楽しさを知る
-          </div>
+    <section class="section aboutus" id="aboutus">
+    <div class="aboutus-overlay"></div>
+
+    <div class="aboutus-panel">
+        <div class="panel-header">
+            <h1 class="topsection-headline">About Us</h1>
+            <p class="section-disc">団体の情報と活動理念</p>
         </div>
-      </figure>
-      <div class="section-button">
-        <a href="about.html" class="button">
-          About Page
-        </a>
-      </div>
-    </section>
+
+        <div class="panel-body">
+            <div class="about-scan-container">
+                <div class="scan-frame">
+                    <img src="asset/images.bak/aboutus/image.png" alt="MEKEN プロフィール画像" class="about-image-source">
+                    <div class="scan-line"></div>
+                    <div class="scan-data-points"></div>
+                </div>
+            </div>
+
+            <div class="about-data-area">
+                <div class="data-typing-container">
+                    <p class="data-text" id="aboutDataText"></p>
+                </div>
+                
+                <div class="data-actions">
+                    <button class="action-btn scan-trigger" id="startAboutScan">
+                        団体データ・スキャン開始
+                    </button>
+                    <button class="action-btn scan-reset" id="resetAboutScan" style="display:none;">
+                        リセット
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
     <section class="section blog">
       <h1 class="topsection-headline slidein-left">Works</h1>
@@ -437,6 +452,7 @@
     <script type="text/javascript" src="asset/js/splide.js"></script>
     <script type="text/javascript" src="asset/js/tabswitch.js"></script>
     <script type="text/javascript" src="asset/js/video.js"></script>
+    <script type="text/javascript" src="asset/js/test.js"></script>
     <!---<script type="text/javascript" src="asset/js/dotpatern.js"></script> --->
   </body>
 </html>
