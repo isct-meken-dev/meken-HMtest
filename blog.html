@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="asset/css/hero.css">
     <link rel="stylesheet" href="asset/css/blog.css">
     <link rel="stylesheet" href="asset/css/responsive.css">
+    <link rel="stylesheet" href="asset/css/tab.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -53,16 +54,28 @@
     </section>
 
     <section class="section blog">
-   
+      <div class="tab-v" id="tab-v">
+          <ul class="tab-contena">
+            <li class="tab-elem" data-tabid="tab-p1">
+              <h2 class="tab-headline filter-btn active" data-filter="all">すべて</h2>
+            </li>
+            <li class="tab-elem" data-tabid="tab-p2">
+              <h2 class="tab-headline filter-btn" data-filter="creation">#創作系</h2>
+            </li>
+            <li class="tab-elem" data-tabid="tab-p2">
+              <h2 class="tab-headline filter-btn" data-filter="analysis">#考察系</h2>
+            </li>
+          </ul>
+        </div>
 
       <ul class="grid grid-col-3 slidein-bottom">
-        <li class="blog-item">
+        <li class="blog-item analysis">
           <article class="card">
             <a href="https://note.com/preview/n2be7566b4e62?prev_access_key=abeef871158f15cdaeecc4b42eb5537a" class="card-link">
               <span class="card-label">New</span>
               <img src="asset/images/blog/blog.026.004.webp" class="card-image" alt="記事の画像" height="100px" width="200px">
               <div class="card-info">
-                <time datetime="2026-04-13" class="card-time">2026-04-13</time>
+                <time datetime="2026-04-13" class="card-time">2026-05-11</time>
                 <h2 class="card-title">一週間に見たアニメの感想まとめ（4/13～4/19）</h2>
                 <p class="card-discription"></p>
               </div>
@@ -75,13 +88,32 @@
             </a>
           </article>
         </li>
-        
-        <li class="blog-item">
+
+        <li class="blog-item analysis">
+          <article class="card">
+            <a href="https://www.animatetimes.com/tag/details.php?id=6212" class="card-link">
+              <img src="asset/images/blog/blog.026.003.webp" class="card-image" alt="記事の画像">
+              <div class="card-info">
+                <time datetime="2026-04-11" class="card-time">2026-05-01</time>
+                <h2 class="card-title">絵を描いても、絵は上手くならない。<br>　　　</h2>
+                <p class="card-discription"></p>
+              </div>
+              <dl class="writer">
+                <dt class="writer-name">Writer</dt>
+                <dd class="writer-icon">
+                  <img src="https://dummyimage.com/50x50/000/fff" alt="筆者のアイコン" class="writer-icon-image">
+                </dd>
+              </dl>
+            </a>
+          </article>
+        </li>
+
+        <li class="blog-item analysis">
           <article class="card">
             <a href="https://note.com/st_animationclub/n/n929d16ffcfcb" class="card-link">
               <img src="asset/images/blog/blog.026.002.webp" class="card-image" alt="記事の画像" width="200px" height="100px">
               <div class="card-info">
-                <time datetime="2026-04-12" class="card-time">2026-04-12</time>
+                <time datetime="2026-04-12" class="card-time">2026-04-24</time>
                 <h2 class="card-title">お前まさかアニメのOP飛ばしたりしてねぇよな？</h2>
                 <p class="card-discription"></p>
               </div>
@@ -95,14 +127,14 @@
           </article>
         </li>
 
-        <li class="blog-item">
+        <li class="blog-item creation">
           <article class="card">
-            <a href="https://www.animatetimes.com/tag/details.php?id=6212" class="card-link">
-              <img src="asset/images/blog/blog.026.003.webp" class="card-image" alt="記事の画像">
+            <a href="https://note.com/preview/n2be7566b4e62?prev_access_key=abeef871158f15cdaeecc4b42eb5537a" class="card-link">
+              <img src="asset/images/blog/blog.026.001.webp" class="card-image" alt="記事の画像" height="100px" width="200px">
               <div class="card-info">
-                <time datetime="2026-04-11" class="card-time">2026-04-11</time>
-                <h2 class="card-title">絵を描いても、絵は上手くならない。</h2>
-                <p class="card-discription">Text text text text text text text</p>
+                <time datetime="2026-04-13" class="card-time">2026-04-17</time>
+                <h2 class="card-title">【オリジナル制作】赤面してる女の子ってかわいいよね</h2>
+                <p class="card-discription"></p>
               </div>
               <dl class="writer">
                 <dt class="writer-name">Writer</dt>
@@ -122,5 +154,6 @@
     <script type="text/javascript" src="asset/js/splide.js"></script>
     <script type="text/javascript" src="asset/js/tabswitch.js"></script>
      <script type="text/javascript" src="asset/js/video.js"></script>
+     <script type="text/javascript" src="asset/js/tagfil.js"></script>
     <!---<script type="text/javascript" src="asset/js/dotpatern.js"></script> ---> 
  </body>
