@@ -91,11 +91,13 @@ grid
     align-items: center;
     margin: 0;
     padding: 0;
+    margin-bottom: 30px;
 }
 .grid-item{
     width: 250px;
-    margin: 0 10px;
+    margin: 0 10px ;
     list-style: none;
+    padding: 20px;
 }
 /*
 .grid-col-2 > .grid-item{

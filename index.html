@@ -7,16 +7,15 @@
 
     <link rel="icon" href="asset/images/meken.icon.webp" class="icon-img">
     <link rel="stylesheet" href="asset/css/base.css">
+    <link rel="stylesheet" href="asset/css/header.css">
     <link rel="stylesheet" href="asset/css/content.css">
     <link rel="stylesheet" href="asset/css/sanitize.css">
     <link rel="stylesheet" href="asset/css/about.css">
     <link rel="stylesheet" href="asset/css/footer.css">
-    <link rel="stylesheet" href="asset/css/hero.css">
     <link rel="stylesheet" href="asset/css/blog.css">
+    <link rel="stylesheet" href="asset/css/hero.css">
     <link rel="stylesheet" href="asset/css/header.css">
-    
-
-
+    <link rel="stylesheet" href="asset/css/responsive.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -26,26 +25,30 @@
   <body>
     <header class="header">
       <div class="logo">
-        <img src="asset/images/logo/meken.logo.bw_text_blur.svg" alt="ロゴ" href="file:///Users/honndakaisei/meken-pro/meken-HMtest/index.html">
+        <img src="asset/images/logo/meken.logo.bw_text_blur.svg" alt="ロゴ" href="index.html">
       </div>
       <nav class="header-nav">
         <ul class="nav-list">
-          <li class="nav-item"><a href="file:///Users/honndakaisei/meken-pro/meken-HMtest/index.html">Home</a></li>
-          <li class="nav-item"><a href="file:///Users/honndakaisei/meken-pro/meken-HMtest/about.html">About</a></li>
-          <li class="nav-item"><a href="file:///Users/honndakaisei/meken-pro/meken-HMtest/works.html">Works</a></li>
-          <li class="nav-item"><a href="file:///Users/honndakaisei/meken-pro/meken-HMtest/blog.html">Blog</a></li>
-          <li class="nav-item"><a href="file:///Users/honndakaisei/meken-pro/meken-HMtest/contact.html">Contact</a></li>
+          <li class="nav-item"><a href="index.html">Home</a></li>
+          <li class="nav-item"><a href="about.html">About</a></li>
+          <li class="nav-item"><a href="works.html">Works</a></li>
+          <li class="nav-item"><a href="blog.html">Blog</a></li>
+          <li class="nav-item"><a href="contact.html">Contact</a></li>
+          <li class="nav-item"><a href="test.html">Test</a></li>
 
         </ul>
       </nav>
     </header>
 
     <section class="hero">
-      <img src="asset/images/work.024.001.logo_w.webp" alt="ぼっち・ざ・てっく！" width="800px" >
-
+       <img src="asset/images/work.024.001.logo_w.webp" alt="ぼっち・ざ・てっく！" > 
+    
+       <!-- <video autoplay loop muted playsinline preload="metadata" class="logo-video blur-layer">
+        <source src="asset/images/Logo Animation .mp4" type="video/mp4">
+      </video> -->
+      
       <!---<canvas id="canvas" width=800 height=600></canvas>. --->
       <video autoplay loop muted playsinline preload="metadata" class="hero-video blur-layer">
-        <!---<source src="asset/images/ぼっち・ざ・てっく！-lite.mp4" type="video/mp4"> --->
         <source src="asset/images/work.024.001.digest.mp4" type="video/mp4">
       </video>
       <div class="top-scroll">
@@ -74,11 +77,10 @@
     <section class="section aboutus">
       <h1 class="topsection-headline slidein-left">About</h1>
       <figure class="about">
-        <div class="about-image slidein-bottom"
+        <div class="about-image slidein-bottom animated-illustration"
              img='asset/images/aboutus/meken.top.webp'
-             style="background-image: url('asset/images/aboutus/meken.top.webp');
-               background-size: cover; background-position: center; position:relative;"
-        >
+             style="background-image: url('asset/images.bak/aboutus/imag.png');
+               background-size: cover; background-position: center; position:relative;">
           <div class="about-discription about-discription-topleft slidein-left">
               科学大唯一の公認アニメサークル
           </div>
@@ -88,24 +90,24 @@
         </div>
       </figure>
       <div class="section-button">
-        <a href="file:///Users/honndakaisei/meken-pro/meken-HMtest/about.html" class="button">
+        <a href="about.html" class="button">
           About Page
         </a>
       </div>
     </section>
 
     <section class="section blog">
-      <h1 class="topsection-headline slidein-left">Works</h1>
+      <h1 class="topsection-headline slidein-left">New Works</h1>
 
       <ul class="grid grid-col-3 slidein-bottom">
         <li class="blog-item">
           <article class="card" id="works-card">
             <a href="https://www.animatetimes.com/tag/details.php?id=6212" class="card-link">
               <span class="card-label">New</span>
-              <img src="asset/images/works/work.020.001.detail.webp" class="card-image" alt="記事の画像">
+              <img src="asset/images/works/24.webp" class="card-image" alt="記事の画像">
               <div class="card-info">
                 <time datetime="2026-04-13" class="card-time">2026-04-13</time>
-                <h2 class="card-title">作品タイトル</h2>
+                <h2 class="card-title">ぼっち・ざ・てっく！</h2>
                  <!--<p class="card-discription">Text text text text text text text</p> -->
               </div>
             </a>
@@ -114,11 +116,11 @@
 
         <li class="blog-item">
           <article class="card">
-            <a href="https://www.animatetimes.com/tag/details.php?id=6212" class="card-link">
-              <img src="asset/images/works/work.021.001.detail.webp" class="card-image" alt="記事の画像">
+            <a href="https://www.animatetimes.com/tag/dework.021.001.detail.webptails.php?id=6212" class="card-link">
+              <img src="asset/images/works/22.webp" class="card-image" alt="記事の画像">
               <div class="card-info">
                 <time datetime="2026-04-12" class="card-time">2026-04-12</time>
-                <h2 class="card-title">作品タイトル</h2>
+                <h2 class="card-title">とある科学の工業少女</h2>
                  <!--<p class="card-discription">Text text text text text text text</p> -->
               </div>
             </a>
@@ -128,10 +130,10 @@
         <li class="blog-item">
           <article class="card">
             <a href="https://www.animatetimes.com/tag/details.php?id=6212" class="card-link">
-              <img src="asset/images/works/work.024.001.detail.webp" class="card-image" alt="記事の画像">
+              <img src="asset/images/works/20.webp" class="card-image" alt="記事の画像">
               <div class="card-info">
                 <time datetime="2026-04-11" class="card-time">2026-04-11</time>
-                <h2 class="card-title">作品タイトル</h2>
+                <h2 class="card-title">TokyoTechOnline</h2>
                  <!-- <p class="card-discription">Text text text text text text text</p> -->
               </div>
             </a>
@@ -139,8 +141,8 @@
         </li>
       </ul>
       <div class="section-button">
-        <a href="file:///Users/honndakaisei/meken-pro/meken-HMtest/works.html" class="button">
-          Works Page
+        <a href="works.html" class="button">
+          More Works
         </a>
       </div>
     </section>
@@ -239,23 +241,45 @@
 
 
     <section class="section blog">
-      <h1 class="topsection-headline slidein-left">Blog</h1>
+      <h1 class="topsection-headline slidein-left">New Blog</h1>
 
       <ul class="grid grid-col-3 slidein-bottom">
-        <li class="blog-item">
+        
+
+        <li class="blog-item analysis">
           <article class="card">
-            <a href="https://www.animatetimes.com/tag/details.php?id=6212" class="card-link">
+            <a href="https://note.com/preview/n2be7566b4e62?prev_access_key=abeef871158f15cdaeecc4b42eb5537a" class="card-link">
               <span class="card-label">New</span>
-              <img src="asset/images/blog/blog.026.001.webp" class="card-image" alt="記事の画像" height="100px" width="200px">
+              <img src="asset/images/blog/blog.026.004.webp" class="card-image" alt="記事の画像" height="100px" width="200px">
               <div class="card-info">
-                <time datetime="2026-04-13" class="card-time">2026-04-13</time>
-                <h2 class="card-title">【オリジナル制作】赤面してる女の子ってかわいいよね</h2>
+                <time datetime="2026-04-13" class="card-time">2026-05-11</time>
+                <h2 class="card-title">一週間に見たアニメの感想まとめ（4/13～4/19）</h2>
                 <p class="card-discription"></p>
               </div>
               <dl class="writer">
-                <dt class="writer-name">Writer</dt>
+                <dt class="writer-name">きたq</dt>
                 <dd class="writer-icon">
-                  <img src="https://dummyimage.com/50x50/000/fff" alt="筆者のアイコン" class="writer-icon-image">
+                  <img src="asset/images/blog/icon_kita.webp" alt="筆者のアイコン" class="writer-icon-image" width="50px">
+                </dd>
+              </dl>
+            </a>
+          </article>
+        </li>
+        
+
+        <li class="blog-item">
+          <article class="card">
+            <a href="https://www.animatetimes.com/tag/details.php?id=6212" class="card-link">
+              <img src="asset/images/blog/blog.026.003.webp" class="card-image" alt="記事の画像">
+              <div class="card-info">
+                <time datetime="2026-04-11" class="card-time">2026-04-11</time>
+                <h2 class="card-title">絵を描いても、絵は上手くならない。<br>　</h2>
+                <p class="card-discription"></p>
+              </div>
+              <dl class="writer">
+                <dt class="writer-name">浅葱藍璃</dt>
+                <dd class="writer-icon">
+                  <img src="asset/images/blog/icon_asagi.webp" alt="筆者のアイコン" class="writer-icon-image" width="50px">
                 </dd>
               </dl>
             </a>
@@ -272,28 +296,9 @@
                 <p class="card-discription"></p>
               </div>
               <dl class="writer">
-                <dt class="writer-name">Writer</dt>
+                <dt class="writer-name">エルマer</dt>
                 <dd class="writer-icon">
-                  <img src="https://dummyimage.com/50x50/000/fff" alt="筆者のアイコン" class="writer-icon-image">
-                </dd>
-              </dl>
-            </a>
-          </article>
-        </li>
-
-        <li class="blog-item">
-          <article class="card">
-            <a href="https://www.animatetimes.com/tag/details.php?id=6212" class="card-link">
-              <img src="asset/images/blog/blog.026.003.webp" class="card-image" alt="記事の画像">
-              <div class="card-info">
-                <time datetime="2026-04-11" class="card-time">2026-04-11</time>
-                <h2 class="card-title">絵を描いても、絵は上手くならない。</h2>
-                <p class="card-discription">Text text text text text text text</p>
-              </div>
-              <dl class="writer">
-                <dt class="writer-name">Writer</dt>
-                <dd class="writer-icon">
-                  <img src="https://dummyimage.com/50x50/000/fff" alt="筆者のアイコン" class="writer-icon-image">
+                  <img src="asset/images/blog/icon_el.webp" alt="筆者のアイコン" class="writer-icon-image" width="50px">
                 </dd>
               </dl>
             </a>
@@ -301,8 +306,8 @@
         </li>
       </ul>
       <div class="section-button">
-        <a href="file:///Users/honndakaisei/meken-pro/meken-HMtest/blog.html" class="button">
-          Blog Page
+        <a href="blog.html" class="button">
+          More Blog 
         </a>
       </div>
     </section>

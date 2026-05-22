@@ -1,5 +1,15 @@
 @charset "UTF-8";
+html, body {
+    overflow-x: hidden; /* 横方向のはみ出しを強制カット */
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
 
+/* 全ての要素に border-box を適用（余白計算による幅のズレを防止） */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
 body{
     font-family: 
     'Noto Sans', 
@@ -74,7 +84,7 @@ slidein
 section
  */
 .section{
-    padding: 60px 0;
+    padding: 40px 0;
     margin: 0 0 60px;
     width: 100%;
 }
@@ -101,6 +111,29 @@ section
     font-weight: bold;
     text-align: left;
     margin: 0 0 30px;
+}
+.section-disc {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.8); /* 真っ白より少し透過させて背景に馴染ませる */
+    max-width: 800px;           /* 長文が間伸びしないように幅を制限 */
+    margin: 0 auto 40px;        /* 中央寄せ */
+    text-align: center;         /* headlineと合わせて中央揃え */
+    padding: 0 20px;
+    position: relative;
+    letter-spacing: 0.05em;
+}
+
+/* 装飾：上下に薄い境界線を入れて「データパネル」感を出す */
+.section-disc::before,
+.section-disc::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #00c3ff, transparent);
+    margin: 15px auto;
+    opacity: 0.6;
 }
 .topsection-headline{
     font-size: 32px;

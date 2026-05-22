@@ -114,3 +114,40 @@
         margin: 10px auto !important;
     }
 }
+
+/* works.css */
+
+/* カード全体の横並び設定を強化 */
+.card-element,
+.card-element-second {
+    display: flex;
+    align-items: center;
+    gap: 24px;       /* 画像とテキストの間の余白 */
+    width: 100%;     /* 親の幅いっぱいに広げる */
+    min-height: 200px; /* 必要に応じて高さを確保 */
+}
+
+/* 画像が大きくなりすぎないように制御 */
+.card-image {
+    width: 300px;     /* PCでの画像の幅を固定または指定 */
+    flex-shrink: 0;   /* 画像がテキストに押されて縮まないようにする */
+    height: auto;
+    object-fit: cover;
+}
+
+/* テキストエリア（card-info）を確実に表示させる */
+.card-info {
+    flex: 1;          /* 残りの幅をすべて使う */
+    min-width: 200px; /* 幅が0になるのを防ぐための最小値 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 0;
+    opacity: 1 !important;     /* 消えている場合は強制表示 */
+    visibility: visible !important;
+}
+
+/* 逆順（右配置）のときの設定 */
+.card-element-second {
+    flex-direction: row-reverse;
+}
