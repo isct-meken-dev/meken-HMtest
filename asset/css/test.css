@@ -13,6 +13,189 @@
     opacity: 0.15; /* テキストの読みやすさを確保 */
 }
 
+@charset "UTF-8";
+
+/* =========================================
+   Works - 年表（タイムライン）スタイル
+   ========================================= */
+
+.works-timeline {
+    padding: 60px 0;
+    width: 100%;
+}
+
+.timeline-container {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+/* --- 中央のサイバーな縦線 --- */
+.timeline-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 2px;
+    background: linear-gradient(to bottom, transparent, rgba(0, 195, 255, 0.8), transparent);
+    transform: translateX(-50%);
+    box-shadow: 0 0 10px rgba(0, 195, 255, 0.5);
+}
+
+/* --- 各タイムラインの項目 --- */
+.timeline-item {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end; /* 基本は右側に配置 */
+    padding-right: 50%; /* 左半分を空ける */
+    margin-bottom: 60px;
+}
+
+.timeline-item:nth-child(even) {
+    justify-content: flex-start; /* 偶数番目は左側に配置 */
+    padding-right: 0;
+    padding-left: 50%; /* 右半分を空ける */
+}
+
+/* --- 中央の光る丸ポチ（ノード） --- */
+.timeline-marker {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #0c0d10;
+    border: 3px solid #00c3ff;
+    transform: translateX(-50%);
+    box-shadow: 0 0 15px rgba(0, 195, 255, 0.8);
+    z-index: 1;
+}
+
+/* --- コンテンツエリアの配置 --- */
+.timeline-content {
+    width: 90%;
+}
+
+/* 奇数（左側）のテキストを右寄せ */
+.timeline-item:nth-child(odd) .timeline-content {
+    margin-right: 40px;
+    text-align: right;
+}
+
+/* 偶数（右側）のテキストを左寄せ */
+.timeline-item:nth-child(even) .timeline-content {
+    margin-left: 40px;
+    text-align: left;
+}
+
+/* --- 年号のスタイル --- */
+.timeline-year {
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: 900;
+    color: #9dff00; /* MEKENのアクセントカラー */
+    margin-bottom: 15px;
+    letter-spacing: 0.1em;
+    text-shadow: 0 0 10px rgba(157, 255, 0, 0.3);
+}
+
+/* --- カード自体のデザイン（HUDパネル風） --- */
+.timeline-card {
+    background: rgba(10, 15, 22, 0.75);
+    border: 1px solid rgba(0, 195, 255, 0.2);
+    border-radius: 12px;
+    overflow: hidden;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.timeline-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 195, 255, 0.2);
+    border-color: rgba(0, 195, 255, 0.5);
+}
+
+.card-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+/* カード内の画像 */
+.card-image {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9; /* 映画のようなワイド比率に統一 */
+    object-fit: cover;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* カード内のテキストエリア */
+.card-info {
+    padding: 20px;
+    text-align: left; /* カードの中の文字は常に左寄せ */
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    margin: 0 0 10px 0;
+}
+
+/* 作品の説明文 */
+.works-dt {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0;
+}
+
+/* =========================================
+   レスポンシブ対応（スマホでは縦線を左に寄せる）
+   ========================================= */
+@media (max-width: 900px) {
+    .timeline-container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    /* 縦線を左端に寄せる */
+    .timeline-container::before {
+        left: 30px;
+    }
+    
+    /* すべてのアイテムを縦線の右側に配置する */
+    .timeline-item, 
+    .timeline-item:nth-child(even) {
+        padding-left: 50px;
+        padding-right: 0;
+        justify-content: flex-start;
+    }
+    
+    /* 丸ポチも左の線上に移動 */
+    .timeline-marker {
+        left: 30px;
+    }
+    
+    /* 余白やテキストの配置をリセット */
+    .timeline-item:nth-child(odd) .timeline-content,
+    .timeline-item:nth-child(even) .timeline-content {
+        margin: 0;
+        width: 100%;
+        text-align: left;
+    }
+    
+    .timeline-year {
+        font-size: 1.5rem;
+    }
+}
+
 /* --- フューチャリスティックなUIパネル --- */
 .aboutus-panel {
     width: 90%;
