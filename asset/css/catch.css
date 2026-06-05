@@ -7,7 +7,6 @@
     flex-direction: row; /* 横並びに変更 */
     align-items: center;
     gap: 3px; /* 画像とテキストの間隔を広げる */
-    margin-bottom: 80px;
 }
 
 .concept-disc {
@@ -95,17 +94,12 @@
         text-align: center !important;
     }
 }
-@charset "UTF-8";
 
-/* =========================================
-   Concept セクション（テキストのみのミニマルスタイル）
-   ========================================= */
 
-/* コンテナ全体：中央寄せでスッキリと見せる */
 .concept {
     width: 90%;
     max-width: 800px; /* 画像がないため、テキストが間延びしない幅に制限 */
-    margin: 0 auto 100px auto;
+    margin: 0 auto 50px auto;
     display: flex;
     flex-direction: column;
     align-items: center;

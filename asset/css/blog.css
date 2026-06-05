@@ -112,5 +112,3 @@ card{
     transition: opacity 0.4s ease, transform 0.4s ease;
     list-style: none;
 }
-
-/* blog-leftitem のCSSは不要になるため削除してOKです */
