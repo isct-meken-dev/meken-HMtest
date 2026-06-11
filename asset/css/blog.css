@@ -76,8 +76,8 @@ card{
     color: #fff;
 }
 .blog-item,.blog-leftitem{
-    margin: 0 10px;
-    width: 350px;
+    margin: 0;
+    width: 30%;
     transition: opacity 0.4s ease, transform 0.4s ease;
     list-style: none;
 }
@@ -88,27 +88,12 @@ card{
 .blog-item.hide {
     display: none !important;
 }
-.blog-item-second{
-    width: 350px;
-    margin: 0;
-    list-style: none;
-    float: right;
-}
-
 /* グリッド全体を左詰め（flex-start）にする */
 .section.blog .grid {
     display: flex;
     flex-wrap: wrap;             /* はみ出たら次の行へ折り返す */
-    justify-content: flex-start; /* 左詰めで配置する */
     gap: 20px;                   /* カード同士の隙間を均等にする */
     max-width: 1110px;           /* (350px * 3) + 隙間分。全体としては画面中央に置くため */
-    margin: 0 auto;
+    margin: 20px auto;
 }
 
-/* 既存の blog-item の余白指定をリセットする */
-.blog-item {
-    width: 350px;
-    margin: 0; /* 古い margin: 0 10px; を上書きして gap に任せる */
-    transition: opacity 0.4s ease, transform 0.4s ease;
-    list-style: none;
-}
